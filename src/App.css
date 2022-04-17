@@ -12,6 +12,18 @@
   font-size: calc(10px + 2vmin);
 }
 
+.demo-btn-swapi {
+  margin-bottom: 10px;
+}
+
+.battleship-card {
+  margin-left: 15px;
+}
+
+.demo-btn-battleship {
+  margin-bottom: 10px;
+}
+
 /* .navbar {
   background-color: #ffffff00;
   min-height: 5vh;

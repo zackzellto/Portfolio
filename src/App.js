@@ -1,10 +1,11 @@
 import "./App.css";
 import GitHubLogo from "./media/github-logo.png";
 import LinkedInLogo from "./media/linkedin-logo.png";
-import PortfolioProjects from "./components/portfolio";
+import StarWarsAPIProject from "./components/swapi-project";
 import ResponsiveNavbar from "./Navbar.jsx";
 import Container from "react-bootstrap/Container";
 import EmailModal from "./components/email-modal";
+import BattleshipProject from "./components/battleship-project";
 
 function App() {
   return (
@@ -44,10 +45,10 @@ function App() {
             <div className="portfolio">
               <br />
               <div>
-                <PortfolioProjects />
+                <StarWarsAPIProject />
               </div>
-              <div>
-                <PortfolioProjects />
+              <div className="battleship-proj">
+                <BattleshipProject />
               </div>
             </div>
             <hr />
