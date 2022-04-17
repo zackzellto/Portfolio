@@ -1,10 +1,10 @@
 .App {
   text-align: center;
+  background-color: bisque;
 }
 
 .App-header {
-  background: url(./media/Moor.jpg);
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,34 +12,46 @@
   font-size: calc(10px + 2vmin);
 }
 
-.navbar {
-  background-color: #282c3400;
+/* .navbar {
+  background-color: #ffffff00;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(2px + 2vmin);
-}
+} */
 
 .nav-links {
+  font-size: 20px;
+}
+
+.portfolio {
+  min-height: 80vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 60%;
 }
 
-a {
-  color: rgb(255, 255, 255);
+.about {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-me-link {
-  color: aqua;
+.github-link {
+  width: 48px;
 }
 
-.resume-link {
+.linkedin-link {
+  width: 48px;
+  margin-left: 30px;
 }
 
-.contact-link {
+.email-link {
+  width: 58px;
+  margin-left: 30px;
 }
