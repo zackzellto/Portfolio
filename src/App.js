@@ -1,7 +1,7 @@
 import "./App.css";
 import GitHubLogo from "./media/github-logo.png";
 import LinkedInLogo from "./media/linkedin-logo.png";
-import EmailLogo from "./media/email-logo.png";
+import PortfolioProjects from "./components/portfolio";
 import ResponsiveNavbar from "./Navbar.jsx";
 import Container from "react-bootstrap/Container";
 import EmailModal from "./components/email-modal";
@@ -38,23 +38,24 @@ function App() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
             <hr />
+            <div className="portfolio-title">
+              <h2>PORTFOLIO</h2>
+            </div>
             <div className="portfolio">
-              PORTFOLIO
               <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <div>
+                <PortfolioProjects />
+              </div>
+              <div>
+                <PortfolioProjects />
+              </div>
             </div>
             <hr />
           </Container>
         </main>
         <footer>
           <Container className="contact-container">
-            <div>
+            <div className="contact">
               <a
                 target="_blank"
                 href="https://github.com/zackzellto"
