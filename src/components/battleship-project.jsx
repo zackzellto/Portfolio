@@ -7,9 +7,9 @@ const BattleshipConsole = require('../media/battleship-console.gif');
 export default function BattleshipProject() {
   return (
     <>
-<Card className='battleship-card' style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={BattleshipConsole} />
-  <Card.Body>
+<Card className='battleship-card' style={{ width: '20rem', height: "35rem", background: "none", border: "hidden"}}>
+  <Card.Img variant="top" src={BattleshipConsole} style={{ height: "19rem"}}/>
+  <Card.Body className='battleship-body'>
     <Card.Title><Card.Img src={BattleshipLogo}></Card.Img></Card.Title>
     <Card.Text>
       The Battleship game can be ran on the console to play the classic game of battleship. Only one sided though. 

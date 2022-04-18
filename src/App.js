@@ -6,6 +6,7 @@ import ResponsiveNavbar from "./Navbar.jsx";
 import Container from "react-bootstrap/Container";
 import EmailModal from "./components/email-modal";
 import BattleshipProject from "./components/battleship-project";
+import SnakeGameProject from "./components/snake-project";
 
 function App() {
   return (
@@ -13,22 +14,19 @@ function App() {
       <ResponsiveNavbar />
       <div className="App">
         <header className="App-header">
-          <Container>
-            <div>
-              <h1>Hi. </h1>
-              <h1>I'm Zack.</h1>
-              <h2>a full-stack software developer.</h2>
-            </div>
-            <div>
-              <h3>Let's get to know eachother!</h3>
-            </div>
+          <Container id="home-section">
+            <div className="landing-title-hey">Hey!</div>
+            <p className="landing-title-zack">I'm Zack.</p>
+            <div>Welcome to my site.</div>
+            <div>Let's get to know eachother!</div>
+            <div className="animated-div1"></div>
           </Container>
         </header>
         <main>
-          <Container>
+          <Container id="about-section">
             <hr />
             <div className="about">
-              <h2>ABOUT ME</h2>
+              <h2>About Me</h2>
               <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -39,9 +37,9 @@ function App() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
             <hr />
-            <div className="portfolio-title">
-              <h2>PORTFOLIO</h2>
-            </div>
+          </Container>
+          <Container id="projects-section">
+            <h2>Projects</h2>
             <div className="portfolio">
               <br />
               <div>
@@ -50,37 +48,43 @@ function App() {
               <div className="battleship-proj">
                 <BattleshipProject />
               </div>
+              <div>
+                <SnakeGameProject />
+              </div>
             </div>
             <hr />
           </Container>
         </main>
         <footer>
-          <Container className="contact-container">
-            <div className="contact">
-              <a
-                target="_blank"
-                href="https://github.com/zackzellto"
-                rel="noreferrer"
-              >
-                <img
-                  className="github-link"
-                  src={GitHubLogo}
-                  alt="github-logo"
-                />
-              </a>
+          <Container id="contact-section">
+            <div className="contact-info">
+              <h2>Contact Me</h2>
+              <div className="contact">
+                <a
+                  target="_blank"
+                  href="https://github.com/zackzellto"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="github-link"
+                    src={GitHubLogo}
+                    alt="github-logo"
+                  />
+                </a>
 
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/zackzellto"
-                rel="noreferrer"
-              >
-                <img
-                  className="linkedin-link"
-                  src={LinkedInLogo}
-                  alt="linkedin-logo"
-                />
-              </a>
-              <EmailModal className="email-link" />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/zackzellto"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="linkedin-link"
+                    src={LinkedInLogo}
+                    alt="linkedin-logo"
+                  />
+                </a>
+                <EmailModal className="email-link" />
+              </div>
             </div>
           </Container>
         </footer>

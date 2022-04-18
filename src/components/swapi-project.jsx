@@ -7,7 +7,7 @@ import SWAPI from '../media/swapi.png';
 export default function StarWarsAPIProject() {
   return (
     <>
-<Card style={{ width: '18rem' }}>
+<Card className='swapi-card' style={{ width: '20rem', height: "35rem", background: "none", border: "hidden" }}>
   <Card.Img variant="top" src={SWAPI} />
   <Card.Body>
     <Card.Title><Card.Img src={SWLogo}></Card.Img></Card.Title>

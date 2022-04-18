@@ -4,27 +4,92 @@
 }
 
 .App-header {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* landing page text */
+.landing-title-hey {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+  font-size: 100px;
+}
+
+.landing-title-zack {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.animated-div1 {
+  z-index: 10;
+  background-color: aliceblue;
+  display: block;
+  min-height: 35vh;
+  border-radius: 10px;
+}
+
+/* Project cards */
+.battleship-body {
+  margin-top: 35px;
 }
 
 .demo-btn-swapi {
   margin-bottom: 10px;
 }
 
+.snakegame-card {
+  margin-left: 25px;
+}
+
 .battleship-card {
-  margin-left: 15px;
+  margin-left: 25px;
+}
+
+.snakegame-card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.5s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.battleship-card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.5s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.swapi-card:hover {
+  box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
+  transition: box-shadow 0.5s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 500ms;
 }
 
 .demo-btn-battleship {
   margin-bottom: 10px;
 }
 
-/* .navbar {
+.snake-btn-repo {
+  margin-top: 10px;
+}
+
+.snakelogo {
+  width: 220px;
+}
+
+/* Navbar links and styling */
+.navbar {
   background-color: #ffffff00;
   min-height: 5vh;
   display: flex;
@@ -32,7 +97,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(2px + 2vmin);
-} */
+}
 
 .nav-links {
   font-size: 20px;
@@ -54,6 +119,7 @@
   justify-content: center;
 }
 
+/* Contact icon links (footer) */
 .github-link {
   width: 48px;
 }
