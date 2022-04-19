@@ -1,6 +1,17 @@
 .App {
   text-align: center;
-  background-color: bisque;
+  color: white;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .App-header {
@@ -11,28 +22,49 @@
   justify-content: center;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Source Code Pro", monospace;
+}
+
 /* landing page text */
 .landing-title-hey {
   font-family: "Source Code Pro", monospace;
   font-weight: 900;
   font-size: 100px;
+  transform: rotate3d(0, 0, 1, 0deg);
+  margin-right: 50rem;
+  margin-top: 7rem;
 }
 
 .landing-title-zack {
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
   font-size: 100px;
+  transform: rotate3d(0, 0, 1, 0deg);
+  margin-right: 50rem;
+  margin-top: 5rem;
+  margin-left: 7rem;
 }
 
 .animated-div1 {
   z-index: 10;
   background-color: aliceblue;
   display: block;
-  min-height: 35vh;
+  height: 500px;
   border-radius: 10px;
 }
 
 /* Project cards */
+
+#projects-section {
+  margin-bottom: 40px;
+}
+
+.above-footer-hr {
+  margin-top: 50px;
+}
 .battleship-body {
   margin-top: 35px;
 }
@@ -50,21 +82,23 @@
 }
 
 .snakegame-card:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
   transition: box-shadow 0.5s;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   transition: 500ms;
+  border-radius: 15px;
 }
 
 .battleship-card:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
   transition: box-shadow 0.5s;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   transition: 500ms;
+  border-radius: 15px;
 }
 
 .swapi-card:hover {
@@ -74,6 +108,7 @@
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   transition: 500ms;
+  border-radius: 15px;
 }
 
 .demo-btn-battleship {
@@ -85,7 +120,20 @@
 }
 
 .snakelogo {
-  width: 220px;
+  width: 150px;
+}
+
+.starwars-logo {
+  width: 50px;
+  height: 90px;
+}
+
+.battleshiplogo {
+  margin-bottom: 15px;
+}
+
+.battleship-body {
+  margin-bottom: 15px;
 }
 
 /* Navbar links and styling */
@@ -101,6 +149,7 @@
 
 .nav-links {
   font-size: 20px;
+  color: white;
 }
 
 .portfolio {
@@ -109,6 +158,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.projects-title {
+  margin-bottom: 40px;
 }
 
 .about {
@@ -116,7 +173,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: sccenter;
 }
 
 /* Contact icon links (footer) */
@@ -132,4 +189,40 @@
 .email-link {
   width: 58px;
   margin-left: 30px;
+}
+
+/* Project SVGs showcasing gifs on hover */
+#projectSVG {
+  border: darkgray solid;
+  border-radius: 7px;
+  width: 55%;
+  max-width: 500px;
+  box-shadow: 3px 3px 3px darkgray;
+  margin: 20px auto;
+  display: block;
+  transition: 0.4s;
+}
+
+#projectText {
+  font-size: 14rem;
+}
+
+#projectSVG:hover {
+  border: white solid;
+  box-shadow: 3px 3px 3px white;
+  transform: scale(1.02);
+}
+
+#projectRect {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#projectSVG:hover > #projectRect {
+  opacity: 0;
+}
+
+#projectSVG:hover > #projectText {
+  opacity: 0;
+  transition: 0.4s;
 }

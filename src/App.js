@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import EmailModal from "./components/email-modal";
 import BattleshipProject from "./components/battleship-project";
 import SnakeGameProject from "./components/snake-project";
+import SnakeGameSVG from "./components/snake-svg";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Container id="home-section">
-            <div className="landing-title-hey">Hey!</div>
-            <p className="landing-title-zack">I'm Zack.</p>
+            <div className="landing-title-hey">
+              Hi.
+              <div className="landing-title-zack">I'm Zack.</div>
+            </div>
             <div>Welcome to my site.</div>
             <div>Let's get to know eachother!</div>
             <div className="animated-div1"></div>
@@ -28,18 +31,25 @@ function App() {
             <div className="about">
               <h2>About Me</h2>
               <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h4>
+                I have been in the tech industry for over 11 years working in
+                IT. I have had a very interesting career so far which has
+                allowed me to accomplish many of my personal goals. I have a
+                passion for learning new things and I am always looking to
+                expand my knowledge.
+                <br />
+                From working at a startup to working at a large corporation, I
+                have had the opportunity to work with a variety of different
+                people and have learned a lot about how to work in a team.
+                <br />
+                I've decided to teach myself to code and I am eager to bring my
+                knowledge and experience to the professioinal world.
+              </h4>
             </div>
             <hr />
           </Container>
           <Container id="projects-section">
-            <h2>Projects</h2>
+            <h2 className="projects-title">Projects</h2>
             <div className="portfolio">
               <br />
               <div>
@@ -52,7 +62,7 @@ function App() {
                 <SnakeGameProject />
               </div>
             </div>
-            <hr />
+            <hr className="above-footer-hr" />
           </Container>
         </main>
         <footer>
@@ -86,6 +96,7 @@ function App() {
                 <EmailModal className="email-link" />
               </div>
             </div>
+            <SnakeGameSVG />
           </Container>
         </footer>
       </div>

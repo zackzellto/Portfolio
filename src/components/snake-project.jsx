@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import SnakeLogo from '../media/snake-game-logo.png'
 
 
 const SnakeGameGif = require('../media/snakedemo.gif');
@@ -11,7 +10,7 @@ export default function SnakeGameProject() {
 <Card className='snakegame-card' style={{ width: '20rem', height: "35rem", background: "none", border: "hidden" }}>
   <Card.Img className='snakegif' variant="top" style={{ height: "19rem"}} src={SnakeGameGif} />
   <Card.Body>
-    <Card.Title><Card.Img className='snakelogo' src={SnakeLogo}></Card.Img></Card.Title>
+    <Card.Title>Snake Game</Card.Title>
     <Card.Text>
       A rendition of the classic game of snake. **NOT mobile friendly** Adjust window to fit content. 
     </Card.Text>
