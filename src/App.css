@@ -1,4 +1,10 @@
+body,
+header,
+html {
+  font-family: "Concert One", cursive;
+}
 .App {
+  font-family: "Concert One", cursive;
   text-align: center;
   color: white;
   background: #141e30; /* fallback for old browsers */
@@ -15,6 +21,7 @@
 }
 
 .App-header {
+  font-family: "Concert One", cursive;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -25,36 +32,29 @@
 h1,
 h2,
 h3 {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Concert One", cursive;
 }
 
 /* landing page text */
-.landing-title-hey {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 900;
-  font-size: 100px;
-  transform: rotate3d(0, 0, 1, 0deg);
-  margin-right: 50rem;
-  margin-top: 7rem;
+
+.word {
+  color: red;
+  font-size: 75px;
+  margin-right: 36rem;
 }
 
-.landing-title-zack {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 700;
-  font-size: 100px;
-  transform: rotate3d(0, 0, 1, 0deg);
-  margin-right: 50rem;
-  margin-top: 5rem;
-  margin-left: 7rem;
+.type-writer {
+  color: aqua;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 }
-
-.animated-div1 {
+/* .animated-div1 {
   z-index: 10;
   background-color: aliceblue;
   display: block;
   height: 500px;
   border-radius: 10px;
-}
+} */
 
 /* Project cards */
 
@@ -65,91 +65,30 @@ h3 {
 .above-footer-hr {
   margin-top: 50px;
 }
-.battleship-body {
-  margin-top: 35px;
-}
-
-.demo-btn-swapi {
-  margin-bottom: 10px;
-}
-
-.snakegame-card {
-  margin-left: 25px;
-}
-
-.battleship-card {
-  margin-left: 25px;
-}
-
-.snakegame-card:hover {
-  box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
-  transition: box-shadow 0.5s;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: 500ms;
-  border-radius: 15px;
-}
-
-.battleship-card:hover {
-  box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
-  transition: box-shadow 0.5s;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: 500ms;
-  border-radius: 15px;
-}
-
-.swapi-card:hover {
-  box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
-  transition: box-shadow 0.5s;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: 500ms;
-  border-radius: 15px;
-}
-
-.demo-btn-battleship {
-  margin-bottom: 10px;
-}
-
-.snake-btn-repo {
-  margin-top: 10px;
-}
-
-.snakelogo {
-  width: 150px;
-}
-
-.starwars-logo {
-  width: 50px;
-  height: 90px;
-}
-
-.battleshiplogo {
-  margin-bottom: 15px;
-}
-
-.battleship-body {
-  margin-bottom: 15px;
-}
 
 /* Navbar links and styling */
+
 .navbar {
+  font-family: "Concert One", cursive;
   background-color: #ffffff00;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(2px + 2vmin);
+  font-size: 24px;
 }
 
 .nav-links {
-  font-size: 20px;
+  background-color: hidden;
+  width: 455px;
+  display: flex;
+  border: 3px solid;
+  border-radius: 20px;
+  font-family: "Concert One", cursive;
+  font-size: 22px;
   color: white;
+  margin-left: 10px;
 }
 
 .portfolio {
@@ -159,9 +98,22 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   font-weight: 500;
   font-style: italic;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Concert One", cursive;
+  font-weight: 500;
+  font-style: italic;
+  min-height: 45vh;
 }
 
 .projects-title {
@@ -193,6 +145,10 @@ h3 {
 
 /* Project SVGs showcasing gifs on hover */
 #projectSVG {
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-left: 25px;
   border-radius: 15px;
   border: darkgray solid;
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
@@ -214,6 +170,12 @@ h3 {
   transition: 0.4s;
 }
 
+#projectRect::before {
+  content: "";
+  background-image: url(#projectImage);
+  z-index: 2;
+}
+
 #projectRect {
   fill: url(#projectGradient);
 }
@@ -228,11 +190,16 @@ h3 {
   opacity: 0;
 }
 
-#projectRect > #projectGif {
+#projectSVG:hover #projectImage {
+  opacity: 0;
   transition: 0.4s;
 }
 
-#projectImage {
-  margin-right: 55rem;
-  margin-top: 5rem;
+#projectSVG:hover #projectGradient {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+#projectRect > #projectGif {
+  transition: 0.4s;
 }

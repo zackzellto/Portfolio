@@ -1,13 +1,14 @@
 import "./App.css";
 import GitHubLogo from "./media/github-logo.png";
 import LinkedInLogo from "./media/linkedin-logo.png";
-import StarWarsAPIProject from "./components/swapi-project";
 import ResponsiveNavbar from "./Navbar.jsx";
 import Container from "react-bootstrap/Container";
 import EmailModal from "./components/email-modal";
-import BattleshipProject from "./components/battleship-project";
-import SnakeGameProject from "./components/snake-project";
 import SnakeGameSVG from "./components/snake-svg";
+import BattleshipSVG from "./components/battleship-svg";
+import StarWarsAPISVG from "./components/swapi-svg";
+import ExpenseTrackerSVG from "./components/expense-tracker-svg";
+import LandingText from "./components/landing-text/landing-text";
 
 function App() {
   return (
@@ -16,12 +17,10 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Container id="home-section">
-            <div className="landing-title-hey">
-              Hi.
-              <div className="landing-title-zack">I'm Zack.</div>
+            <div>
+              <LandingText />
             </div>
-            <div>Welcome to my site.</div>
-            <div>Let's get to know eachother!</div>
+
             <div className="animated-div1"></div>
           </Container>
         </header>
@@ -29,7 +28,7 @@ function App() {
           <Container id="about-section">
             <hr />
             <div className="about">
-              <h2>About Me</h2>
+              <h1>About Me</h1>
               <br />
               <h4>
                 I have been in the tech industry for over 11 years working in
@@ -49,17 +48,16 @@ function App() {
             <hr />
           </Container>
           <Container id="projects-section">
-            <h2 className="projects-title">Projects</h2>
+            <h1 className="projects-title">Projects</h1>
             <div className="portfolio">
-              <br />
-              <div>
-                <StarWarsAPIProject />
-              </div>
-              <div className="battleship-proj">
-                <BattleshipProject />
-              </div>
-              <div>
-                <SnakeGameProject />
+              <div className="portfolio-items">
+                <StarWarsAPISVG />
+
+                <BattleshipSVG />
+
+                <SnakeGameSVG />
+
+                <ExpenseTrackerSVG />
               </div>
             </div>
             <hr className="above-footer-hr" />
@@ -68,7 +66,7 @@ function App() {
         <footer>
           <Container id="contact-section">
             <div className="contact-info">
-              <h2>Contact Me</h2>
+              <h1>Contact Me</h1>
               <div className="contact">
                 <a
                   target="_blank"
@@ -96,7 +94,6 @@ function App() {
                 <EmailModal className="email-link" />
               </div>
             </div>
-            <SnakeGameSVG />
           </Container>
         </footer>
       </div>
