@@ -18,7 +18,7 @@ export default function LandingText() {
                 typewriter
                 .pauseFor(4500)
                 .typeString("I'm Zack.")
-                .pauseFor(4500)
+                
                 .start();
             }}
         /> 

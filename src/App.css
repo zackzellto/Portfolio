@@ -1,7 +1,12 @@
+*{
+  box-sizing: inherit;
+}
+
 body,
 header,
 html {
   font-family: "Concert One", cursive;
+  scroll-behavior: smooth;
 }
 .App {
   font-family: "Concert One", cursive;
@@ -38,7 +43,7 @@ h3 {
 /* landing page text */
 
 .word {
-  color: red;
+  color: rgb(0, 157, 255);
   font-size: 75px;
   margin-right: 36rem;
 }
@@ -205,3 +210,107 @@ h3 {
 #projectRect > #projectGif {
   transition: 0.4s;
 }
+
+/* Contact Icon Menu Styling */
+footer{
+
+  color: white;
+  font-family: "Concert One", cursive;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Concert One", cursive;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 50px;
+
+}
+
+#contact-icon-menu{
+  position: fixed;
+  bottom: 4.5rem;
+  left: 10px;
+  width: 5rem;
+  height: 4rem;
+  margin-right: 102rem;
+}
+
+#contact-icon-ul{
+ list-style: none;
+ width: 100%;
+ left: 15px;
+}
+
+li{
+  border: .5px solid darkgray;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: rgb(58, 60, 74);
+  background: linear-gradient(173deg, rgba(58, 60, 74, 1) 0%, rgba(36, 38, 50, 1) 100%);
+  border-radius: 10px;
+  margin-right: 6rem;
+  margin-left: -1rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  transition: 0.4s;
+  
+}
+
+li:hover{
+  transform: scale(1.15);
+  border: 1px solid;
+}
+
+#contact-icon-github{
+    background: rgb(58, 60, 74);
+    background: linear-gradient(173deg, rgba(58, 60, 74, 1) 0%, rgba(36, 38, 50, 1) 100%);
+  z-index: 10;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.4s;
+  transform: rotate(0deg);
+}
+
+#contact-icon-github:hover {
+  background: black;
+  z-index: 10;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.4s;
+  transform: rotate(0deg);
+}
+
+
+#contact-icon-linkedin:hover {
+  background: #0072b1;
+  z-index: 10;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.4s;
+  transform: rotate(0deg);
+    transform: scale(1.15);
+    border: 1px solid;
+}
+
