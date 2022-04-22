@@ -48,13 +48,15 @@ h3 {
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 }
-/* .animated-div1 {
+.animated-div1 {
   z-index: 10;
   background-color: aliceblue;
   display: block;
   height: 500px;
-  border-radius: 10px;
-} */
+  border-radius: 255px;
+  
+
+}
 
 /* Project cards */
 
