@@ -73,8 +73,12 @@ function App() {
             <hr />
             <div id="resume-section">
               <h1 id="resume-title">2. Resume</h1>
-              <p>Have an opportunity you think you can use me for? </p>
-              <p id="resume-text">Be sure to check out my resume!</p>
+              <div>
+                <p id="resume-text">
+                  Have an opportunity you think you can use me for?{" "}
+                </p>
+                <p id="resume-text">Be sure to check out my resume!</p>
+              </div>
               <button
                 id="resume-button"
                 href="https://drive.google.com/file/d/1whj-0qPem-W9Qik1SVKQk0ywHOPS6gz3/view?usp=sharing"

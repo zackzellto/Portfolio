@@ -18,7 +18,7 @@ background: #093028;
 /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #237A57, #093028);
 /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #237A57, #093028);
+background: linear-gradient(to bottom, #054c30, #012c24);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -104,7 +104,7 @@ h3 {
   z-index: 10;
   background-color: #9DC88D;
   display: block;
-  height: 600px;
+  height: 520px;
   width: 50%;
   margin-right: 50%;
   margin-bottom: 5rem;;
@@ -372,8 +372,8 @@ li:hover{
   border-radius: 10px;
   transition: 0.4s;
   transform: rotate(0deg);
-  margin-left: 40rem;
-  margin-bottom: 5rem;
+  
+  
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 }
@@ -389,6 +389,15 @@ li:hover{
   transition: 0.4s;
   transform: scale(1.15);
   cursor: pointer;
+}
+
+#resume-text{
+  font-family: 'Questrial',
+  sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: italic;
+
 }
 
 #email-form-name{
