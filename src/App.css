@@ -5,34 +5,27 @@
 body,
 header,
 html {
-    font-family: 'Nanum Gothic Coding',
-    monospace;
-    font-weight: 700;
+    font-family: 'Questrial',
+    sans-serif;
   scroll-behavior: smooth;
 }
 .App {
-font-family: 'Nanum Gothic Coding',
-monospace;
-font-weight: 700;
+font-family: 'Questrial',
+sans-serif;
   text-align: center;
   color: white;
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #093028;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #237A57, #093028);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #237A57, #093028);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .App-header {
-  font-family: 'Nanum Gothic Coding',
-  monospace;
-  font-weight: 700;
+  font-family: 'Questrial',
+  sans-serif;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -43,46 +36,82 @@ font-weight: 700;
 h1,
 h2,
 h3 {
-    font-family: 'Nanum Gothic Coding',
-    monospace;
-    font-weight: 700;
+    font-family: 'Questrial',
+    sans-serif;
 }
 
 /* landing page text */
 
 .word {
-  color: rgb(0, 157, 255);
-  font-size: 65px;
-  margin-right: 36rem;
+  color: #ffffff;
+  font-size: 85px;
+  font-family: 'Questrial',
+  sans-serif;
+  margin-top: 9rem;
 }
 
 .about{
   color: rgb(255, 255, 255);
   font-size: 25px;
-  margin-right: 36rem;
+  margin-left: 36rem;
   text-align: start;
 }
 
 #about-title{
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 35px;
+  margin-top: -8rem;
+  margin-left: 32.5rem;
+  text-align: end;
+  color: #F1B24A;
+    text-shadow: 3px 5px black
+}
+
+.projects-title {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
   margin-right: 36.5rem;
   text-align: start;
-  color: #a2acbe;
-    text-shadow: 5px 5px black
+  color: #F1B24A;
+  text-shadow: 3px 5px black
+}
+
+#resume-title {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  margin-right: 36.5rem;
+  text-align: start;
+  color: #F1B24A;
+  text-shadow: 3px 5px black
+}
+
+#contact-title {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  margin-top: -1.5rem;
+  margin-right: 36.5rem;
+  text-align: start;
+  color: #F1B24A;
+  text-shadow: 3px 5px black
 }
 
 .type-writer {
-  color: aqua;
+  color: rgb(129, 159, 159);
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 }
 .animated-div1 {
   z-index: 10;
-  background-color: aliceblue;
+  background-color: #9DC88D;
   display: block;
-  height: 500px;
-  border-radius: 255px;
+  height: 600px;
+  width: 50%;
+  margin-right: 50%;
+  margin-bottom: 5rem;;
+  border-radius: 25px;
+    box-shadow: rgb(0 0 0 / 59%) -25px -20px 25px 22px,
+    rgb(0 0 0 / 73%) 21px 55px 502px -20px;
+
 }
 
 /* Project cards */
@@ -98,9 +127,8 @@ h3 {
 /* Navbar links and styling */
 
 .navbar {
-    font-family: 'Nanum Gothic Coding',
-    monospace;
-    font-weight: 700;
+    font-family: 'Questrial',
+    sans-serif;
   min-height: 5vh;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -109,28 +137,24 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 5px 15px -10px;
-      background: #141e30;
-      /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right,
-        #243b55,
-        #141e30);
-      /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right,
-        #243b55,
-        #141e30);
+  color: #FFE5B4;
+
 }
 
 .nav-links {
   background-color: hidden;
   width: 555px;
   display: flex;
-    font-family: 'Nanum Gothic Coding',
-    monospace;
-    font-weight: 700;
+    font-family: 'Questrial',
+    sans-serif;
   font-size: 22px;
-  color: white;
+  color: #e5ba6b;
+  
+}
+
+#nav-num{
+  color: #F1B24A;
+  font-size: 20px;
   
 }
 
@@ -155,9 +179,8 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 16px;
-    font-family: 'Nanum Gothic Coding',
-    monospace;
-    font-weight: 700;
+    font-family: 'Questrial',
+    sans-serif;
   font-style: italic;
   min-height: 45vh;
 }
@@ -172,21 +195,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* Contact icon links (footer) */
-.github-link {
-  width: 48px;
-}
-
-.linkedin-link {
-  width: 48px;
-  margin-left: 30px;
-}
-
-.email-link {
-  width: 58px;
-  margin-left: 30px;
 }
 
 /* Project SVGs showcasing gifs on hover */
@@ -254,11 +262,9 @@ h3 {
 footer{
 
   color: white;
-      font-family: 'Nanum Gothic Coding',
-      monospace;
-      font-weight: 700;
+      font-family: 'Questrial',
+      sans-serif;
   font-size: 16px;
-  
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -271,7 +277,8 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Concert One", cursive;
+  font-family: 'Questrial',
+  sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: italic;
@@ -299,8 +306,8 @@ li{
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  background: rgb(58, 60, 74);
-  background: linear-gradient(173deg, rgba(58, 60, 74, 1) 0%, rgba(36, 38, 50, 1) 100%);
+    background: rgb(#9DC88D);
+    background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
   border-radius: 10px;
   margin-right: 6rem;
   margin-left: -1rem;
@@ -318,8 +325,8 @@ li:hover{
 }
 
 #contact-icon-github{
-    background: rgb(58, 60, 74);
-    background: linear-gradient(173deg, rgba(58, 60, 74, 1) 0%, rgba(36, 38, 50, 1) 100%);
+    background: rgb(#9DC88D);
+    background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
   z-index: 10;
   background-size: cover;
   background-repeat: no-repeat;
@@ -355,8 +362,8 @@ li:hover{
 }
 
 #resume-button{
-  background: rgb(58, 60, 74);
-  background: linear-gradient(173deg, rgba(58, 60, 74, 1) 0%, rgba(36, 38, 50, 1) 100%);
+    background: rgb(#9DC88D);
+    background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
   width: 150px;
   height: 80px;
   border: 1px solid darkgray;
@@ -365,6 +372,8 @@ li:hover{
   border-radius: 10px;
   transition: 0.4s;
   transform: rotate(0deg);
+  margin-left: 40rem;
+  margin-bottom: 5rem;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 }
@@ -382,4 +391,110 @@ li:hover{
   cursor: pointer;
 }
 
+#email-form-name{
+  width: 50%;
+  height: 50px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Questrial',
+  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  transition: 0.4s;
+}
 
+#email-form-email{
+  width: 50%;
+  height: 50px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 40rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  ffont-family: 'Questrial',
+  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  transition: 0.4s;
+}
+
+#email-form-subject{
+  width: 50%;
+  height: 50px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Questrial',
+  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  transition: 0.4s;
+}
+
+#email-form-message{
+  width: 50%;
+  height: 220px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Questrial',
+  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  transition: 0.4s;
+}
+
+#email-form-button{
+  width: 50%;
+  height: 50px;
+      background: rgb(#9DC88D);
+      background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Questrial',
+  sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  transition: 0.4s;
+}
+
+#email-text-muted{
+  margin-left: 40rem;
+}
+
+.form-label{
+  margin-left: 40rem;
+      text-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+}
+
+.form-control{
+      box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+}
+
+#copyright-footer{
+    color: #F1B24A;
+    text-shadow: 3px 5px black
+}

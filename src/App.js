@@ -9,7 +9,6 @@ import LandingText from "./components/landing-text/landing-text";
 import ContactIconMenu from "./components/contact/contact-icon-menu";
 import ResumeIcon from "./media/resume-icon.png";
 import ContactForm from "./components/contact/contact-form";
-import { Button } from "react-bootstrap";
 
 function App() {
   return (
@@ -18,11 +17,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Container id="home-section">
-            <div>
+            <div className="animated-div1">
               <LandingText />
             </div>
-
-            <div className="animated-div1"></div>
           </Container>
         </header>
         <main>
@@ -75,8 +72,9 @@ function App() {
             </div>
             <hr />
             <div id="resume-section">
-              <h1 cid="resume-title">2. Resume</h1>
-              <p>Be sure to check out my resume!</p>
+              <h1 id="resume-title">2. Resume</h1>
+              <p>Have an opportunity you think you can use me for? </p>
+              <p id="resume-text">Be sure to check out my resume!</p>
               <button
                 id="resume-button"
                 href="https://drive.google.com/file/d/1whj-0qPem-W9Qik1SVKQk0ywHOPS6gz3/view?usp=sharing"
@@ -92,13 +90,14 @@ function App() {
         <footer>
           <Container id="contact-section">
             <div className="contact-info">
-              <h1>3. Contact</h1>
+              <h1 id="contact-title">3. Contact</h1>
               <div>
                 <ContactForm />
               </div>
               <hr />
-              <div className="contact"></div>
-              Built & Designed by Zack Zellto
+              <div className="contact"></div>{" "}
+              <p id="copyright-footer">Built & Designed by: </p>
+              <p>© Zack Zellto - 2022</p>
             </div>
           </Container>
         </footer>
