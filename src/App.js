@@ -1,14 +1,16 @@
 import "./App.css";
 import ResponsiveNavbar from "./Navbar.jsx";
 import Container from "react-bootstrap/Container";
-import SnakeGameSVG from "./components/snake-svg";
-import BattleshipSVG from "./components/battleship-svg";
-import StarWarsAPISVG from "./components/swapi-svg";
-import ExpenseTrackerSVG from "./components/expense-tracker-svg";
+import SnakeGameSVG from "./components/projects/snake-svg";
+import BattleshipSVG from "./components/projects/battleship-svg";
+import StarWarsAPISVG from "./components/projects/swapi-svg";
+import ExpenseTrackerSVG from "./components/projects/expense-tracker-svg";
 import LandingText from "./components/landing-text/landing-text";
 import ContactIconMenu from "./components/contact/contact-icon-menu";
 import ResumeIcon from "./media/resume-icon.png";
 import ContactForm from "./components/contact/contact-form";
+import BattleshipInfo from "./components/projects/battleship-info";
+import { Button } from "react-bootstrap";
 
 function App() {
   return (
@@ -55,38 +57,49 @@ function App() {
                 </p>
               </h5>
             </div>
+            <div id="skills-section">
+              <h2 id="skills-title">Skills</h2>
+            </div>
             <hr />
           </Container>
           <Container id="projects-section">
             <h1 className="projects-title">1. Projects</h1>
             <div className="portfolio">
               <div className="portfolio-items">
-                <StarWarsAPISVG />
+                {/* <div id="swapi-project">
+                  <StarWarsAPISVG />
+                </div> */}
+                <div>
+                  <BattleshipInfo />
+                  <div id="battleship-project">
+                    <BattleshipSVG />
+                  </div>
+                </div>
 
-                <BattleshipSVG />
-
-                <SnakeGameSVG />
-
-                <ExpenseTrackerSVG />
+                {/* <div id="snake-project">
+                  <SnakeGameSVG />
+                </div>
+                <div id="expense-tracker-project">
+                  <ExpenseTrackerSVG />
+                </div> */}
               </div>
             </div>
             <hr />
             <div id="resume-section">
               <h1 id="resume-title">2. Resume</h1>
               <div>
-                <p id="resume-text">
-                  Have an opportunity you think you can use me for?{" "}
-                </p>
+                <p id="resume-text">Have an opportunity you can use me for? </p>
                 <p id="resume-text">Be sure to check out my resume!</p>
               </div>
-              <button
+              <Button
                 id="resume-button"
+                type="button"
                 href="https://drive.google.com/file/d/1whj-0qPem-W9Qik1SVKQk0ywHOPS6gz3/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img id="resume-icon" src={ResumeIcon} alt="resume" />
-              </button>
+              </Button>
             </div>
             <hr className="above-footer-hr" />
           </Container>
