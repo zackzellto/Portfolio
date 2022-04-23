@@ -8,6 +8,7 @@ import ExpenseTrackerSVG from "./components/expense-tracker-svg";
 import LandingText from "./components/landing-text/landing-text";
 import ContactIconMenu from "./components/contact/contact-icon-menu";
 import ResumeIcon from "./media/resume-icon.png";
+import ContactForm from "./components/contact/contact-form";
 import { Button } from "react-bootstrap";
 
 function App() {
@@ -92,6 +93,9 @@ function App() {
           <Container id="contact-section">
             <div className="contact-info">
               <h1>3. Contact</h1>
+              <div>
+                <ContactForm />
+              </div>
               <hr />
               <div className="contact"></div>
               Built & Designed by Zack Zellto
