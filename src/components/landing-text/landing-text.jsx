@@ -7,26 +7,27 @@ export default function LandingText() {
         <TypeWriter
             onInit={(typewriter) => {
                 typewriter
-                .pauseFor(2500)
+                .pauseFor(1500)
                 .typeString("Hi.")
-                .pauseFor(3500)
-                .start();
-            }}
-        />  
-                <TypeWriter
-            onInit={(typewriter) => {
-                typewriter
-                .pauseFor(4500)
+                .pauseFor(1500)
+                .typeString("<br />")
                 .typeString("I'm Zack.")
-                
-                .start();
-            }}
-        /> 
-                <TypeWriter
-            onInit={(typewriter) => {
-                typewriter
-                .pauseFor(5500)
-                .typeString("\na Software Engineer.")
+                .pauseFor(1500)
+                .typeString("<br />")
+                .pauseFor(1500)
+                .typeString("a Software Engineer.")
+                .pauseFor(1500)
+                .deleteChars(18)
+                .typeString("Dad.")
+                .pauseFor(1500)
+                .deleteChars(4)
+                .typeString("Husband.")
+                .pauseFor(1500)
+                .deleteChars(8)
+                .typeString("gamer.")
+                .pauseFor(1500)
+                .deleteChars(8)
+                .typeString("a Software Engineer.")
                 .start();
             }}
         /> 
