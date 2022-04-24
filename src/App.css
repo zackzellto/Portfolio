@@ -1,23 +1,17 @@
-*{
-  box-sizing: inherit;
-  
-}
-
-.hide-me{
-  display: none;
+html {
+    font-family: 'Questrial',
+    sans-serif;
+  scroll-behavior: smooth;
 }
 
 hr{
   color: white;
 }
 
-body,
-header,
-html {
-    font-family: 'Questrial',
-    sans-serif;
-  scroll-behavior: smooth;
+.hide-me{
+  display: none;
 }
+
 .App {
 font-family: 'Questrial',
 sans-serif;
@@ -29,21 +23,6 @@ background: #F0F2F0;
 background: -webkit-linear-gradient(to bottom, #000C40, #F0F2F0);
 /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #000C40, #F0F2F0);
-
-/* Chrome 10-25, Safari 5.1-6 */
-
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.App-header {
-  font-family: 'Questrial',
-  sans-serif;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 h1,
@@ -53,532 +32,578 @@ h3 {
     sans-serif;
 }
 
-/* landing page text */
+    /* default styles here for older browsers. 
+           I tend to go for a 600px - 960px width max but using percentages
+        */
+    @media only screen and (min-width: 960px) {
+      /* styles for browsers larger than 960px; */
+    }
+    
+    @media only screen and (min-width: 1440px) {
+      /* styles for browsers larger than 1440px; */
+      
+      /* landing page text */
+    }
+    
+    @media only screen and (min-width: 2000px) {
+      /* for sumo sized (mac) screens */
+    }
+    
+    @media only screen and (max-device-width: 480px) {
+      /* styles for mobile browsers smaller than 480px; (iPhone) */
 
-.word {
-  color: #ffffff;
-  font-size: 85px;
-  font-family: 'Questrial',
-  sans-serif;
-  margin-top: 9rem;
-}
+            .App-header {
+              font-family: 'Questrial',
+                sans-serif;
+              min-height: 50vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
 
-.about{
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  margin-right: 36rem;
-  text-align: start;
-}
+            .word {
+              color: #ffffff;
+              font-size: 85px;
+              font-family: 'Questrial',
+                sans-serif;
+              margin-top: 9rem;
+            }
+            
+            .animated-div1 {
+              z-index: 10;
+              background-color: #9DC88D;
+              display: flex;
+              height: 520px;
+              width: 200px;
+              margin-right: 50%;
+              margin-bottom: 5rem;
+              ;
+              border-radius: 25px;
+              box-shadow: rgb(0 0 0 / 59%) -25px -20px 25px 22px,
+                rgb(0 0 0 / 73%) 21px 55px 502px -20px;
+            }
+            
+            #skills-section {
+              color: black;
+              height: 100px;
+              background-color: #efd09e;
+              width: 100px;
+            }
+            
+            #skills-title {
+              margin-bottom: 10px;
+              color: black;
+              height: 100px;
+              background-color: #efd09e;
+              width: 100px;
+            }
 
-#about-title{
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  margin-top: -8rem;
-  margin-right: 32.5rem;
-  text-align: start;
-  color: #F1B24A;
-    text-shadow: 3px 5px black
-}
+            
+            
+            #resume-button {
+              background: rgb(#9DC88D);
+              background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
+              width: 150px;
+              height: 80px;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 10px;
+              transition: 0.4s;
+              transform: rotate(0deg);
+              border: 2px solid black;
+            
+            
+              box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+            }
+            
+            #resume-button:hover {
+              background: black;
+              border: 1px solid white;
+              z-index: 10;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 10px;
+              transition: 0.4s;
+              transform: scale(1.15);
+              cursor: pointer;
+            }
+            
+            #resume-text {
+              font-family: 'Questrial',
+                sans-serif;
+              font-size: 36px;
+              font-weight: 500;
+              font-style: italic;
+            
+            }
 
-#skills-section{
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  margin-right: 36rem;
-  text-align: start;
-  height: 500px;
-  width: 500px;
-  background-color: #efd09e;
-  border-radius: 25px;
-  margin-left: 50rem;
-  margin-top: -30rem;
-  margin-bottom: 5rem;
-    border-radius: 25px;
-    box-shadow: rgb(0 0 0 / 59%) 25px 10px 15px 12px,
-    rgb(0 0 0 / 73%) 11px 35px 502px -20px;
-}
+            #projects-section {
+              margin-bottom: 40px;
+            }
+            
+            .above-footer-hr {
+              margin-top: 50px;
+            }
+            
+            /* Navbar links and styling */
+            
+            .navbar {
+              font-family: 'Questrial',
+                sans-serif;
+              min-height: 5vh;
+              border-bottom-left-radius: 1rem;
+              border-bottom-right-radius: 1rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              font-size: 24px;
+              background: #09302800;
+              /* fallback for old browsers */
+            
+            }
+            
+            .nav-links {
+              display: flex;
+              width: 478px;
+              font-family: 'Questrial',
+                sans-serif;
+              font-size: 22px;
+              color: #e5ba6b;
+              ;
+            }
+            
+            #nav-num {
+              color: #F1B24A;
+              font-size: 20px;
+            }
+            
+            .portfolio {
+              min-height: 60vh;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              font-size: 16px;
+              font-family: 'Nanum Gothic Coding',
+                monospace;
+              font-weight: 700;
+            
+              font-style: italic;
+            }
+            
+            .portfolio-items {
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              font-size: 16px;
+              font-family: 'Questrial',
+                sans-serif;
+              font-style: italic;
+              min-height: 45vh;
+              height: fit-content;
+            }
+            
+            .projects-title {
+              margin-bottom: 40px;
+            }
+            
+            .about {
+              min-height: 50vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            /* Project SVGs showcasing gifs on hover */
+            #projectSVG {
+              align-items: center;
+              justify-content: center;
+              margin-right: 2rem;
+              border-radius: 15px;
+              border: darkgray solid;
+              box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+              cursor: pointer;
+              display: flex;
+              position: relative;
+              right: 40px;
+              transform: scale(1);
+              width: 140%;
+              transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+            }
+            
+            #projectSVG:hover {
+              border: white solid;
+              box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+              transform: scale(1.05);
+              cursor: pointer;
+              opacity: 1;
+              transition: 0.4s;
+            }
+            
+            #projectRect::before {
+              content: "";
+              background-image: url(#projectImage);
+              z-index: 2;
+            }
+            
+            #projectRect {
+              fill: url(#projectGradient);
+            }
+            
+            #projectGif {
+              transition: 0.4s;
+              opacity: 1;
+            }
+            
+            #projectSVG:hover #projectRect {
+              fill: url(#projectGif);
+              opacity: 0;
+            }
+            
+            #projectSVG:hover #projectImage {
+              opacity: 0;
+              transition: 0.4s;
+            }
+            
+            #projectSVG:hover #projectGradient {
+              opacity: 0;
+              transition: 0.4s;
+            }
+            
+            #projectRect>#projectGif {
+              transition: 0.4s;
+            }
 
-.projects-title {
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  margin-right: 36.5rem;
-  text-align: start;
-  color: #F1B24A;
-  text-shadow: 3px 5px black
-}
 
-#resume-title {
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  margin-right: 36.5rem;
-  text-align: start;
-  color: #F1B24A;
-  text-shadow: 3px 5px black
-}
-
-#contact-title {
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  margin-top: -1.5rem;
-  margin-right: 36.5rem;
-  text-align: start;
-  color: #F1B24A;
-  text-shadow: 3px 5px black
-}
-
-.type-writer {
-  color: rgb(129, 159, 159);
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-}
-.animated-div1 {
-  z-index: 10;
-  background-color: #9DC88D;
-  display: block;
-  height: 520px;
-  width: 50%;
-  margin-right: 50%;
-  margin-bottom: 5rem;;
-  border-radius: 25px;
-    box-shadow: rgb(0 0 0 / 59%) -25px -20px 25px 22px,
-    rgb(0 0 0 / 73%) 21px 55px 502px -20px;
-
-}
-
-/* Project cards */
-
-#projects-section {
-  margin-bottom: 40px;
-}
-
-.above-footer-hr {
-  margin-top: 50px;
-}
-
-/* Navbar links and styling */
-
-.navbar {
-    font-family: 'Questrial',
-    sans-serif;
-  min-height: 5vh;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-background: #09302800;
-/* fallback for old browsers */
-
-}
-
-.nav-links {
-  display: flex;
-  width: 478px;
-    font-family: 'Questrial',
-    sans-serif;
-  font-size: 22px;
-  color: #e5ba6b;
-  ;
-}
-
-#nav-num{
-  color: #F1B24A;
-  font-size: 20px;
-}
-
-.portfolio {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-    font-family: 'Nanum Gothic Coding',
-    monospace;
-    font-weight: 700;
+  .about {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-right: 36rem;
+    text-align: start;
+  }
   
-  font-style: italic;
-}
-
-.portfolio-items {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-    font-family: 'Questrial',
-    sans-serif;
-  font-style: italic;
-  min-height: 45vh;
-  height: fit-content;
-}
-
-.projects-title {
-  margin-bottom: 40px;
-}
-
-.about {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Project SVGs showcasing gifs on hover */
-#projectSVG {
-  align-items: center;
-  justify-content: center;
-  margin-right: 2rem;
-  border-radius: 15px;
-  border: darkgray solid;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-  cursor: pointer;
-  display: flex;
-  position: relative;
-  right: 40px;
-  transform: scale(1);
-  width: 140%;
-  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
-}
-
-#projectSVG:hover {
-  border: white solid;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-  transform: scale(1.05);
-  cursor: pointer;
-  opacity: 1;
-  transition: 0.4s;
-}
-
-#projectRect::before {
-  content: "";
-  background-image: url(#projectImage);
-  z-index: 2;
-}
-
-#projectRect {
-  fill: url(#projectGradient);
-}
-
-#projectGif {
-  transition: 0.4s;
-  opacity: 1;
-}
-
-#projectSVG:hover #projectRect {
-  fill: url(#projectGif);
-  opacity: 0;
-}
-
-#projectSVG:hover #projectImage {
-  opacity: 0;
-  transition: 0.4s;
-}
-
-#projectSVG:hover #projectGradient {
-  opacity: 0;
-  transition: 0.4s;
-}
-
-#projectRect > #projectGif {
-  transition: 0.4s;
-}
-
-/* Battleship Specific Project */
-
-#battleship-info {
-  margin-right: 10rem;
-  margin-bottom: 20rem;
-  width: 100%;
-}
-
-#battleship-csharp-logo{
-  margin-left: 1rem;
-  
-}
-
-#battleship-info-title{
-  display: flex;
-  margin-top: -17rem;
-  font-style: normal;
-}
-
-#battleship-info-summary{
-  position: relative;
-  top: 25px;
-  display: flex;
-  background-color: #efd09e;
-  z-index: 10;
-  border-radius: 10px;
-}
-
-#github-battleship{
-  background-color: #ffffff;
-  border-radius: 15px;
-  position: relative;
-  display: flex;
-  top: 190px; 
-  left: 57.3rem;
-}
-
-#projectSVG > #battleship-info-summary{
-  display: flex;
-  background-color: #efd09e;
-  z-index: 10;
-}
-/* Contact Icon Menu Styling */
-footer{
-
-  color: white;
-      font-family: 'Questrial',
-      sans-serif;
-  font-size: 16px;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#contact-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Questrial',
-  sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: italic;
-  margin-top: 50px;
-
-}
-
-#contact-icon-menu{
-  position: fixed;
-  bottom: 4.5rem;
-  left: 10px;
-  width: 5rem;
-  height: 4rem;
-  margin-right: 102rem;
-}
-
-#contact-icon-ul{
- list-style: none;
- width: 100%;
- left: 15px;
-}
-
-li{
-  border: 1px solid black;
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-    background: rgb(#9DC88D);
-    background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
-  border-radius: 10px;
-  margin-right: 6rem;
-  margin-left: -1rem;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-  transition: 0.4s;
-  
-}
-
-li:hover{
-  transform: scale(1.15);
-  border: 1px solid;
-}
-
-#contact-icon-github{
-    background: rgb(#9DC88D);
-    background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
-  z-index: 10;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  transition: 0.4s;
-  transform: rotate(0deg);
-}
-
-#contact-icon-github:hover {
-  background: black;
-  z-index: 10;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  transition: 0.4s;
-  transform: rotate(0deg);
-}
-
-
-#contact-icon-linkedin:hover {
-  background: #0072b1;
-  z-index: 10;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  transition: 0.4s;
-  transform: rotate(0deg);
-    transform: scale(1.15);
-    border: 1px solid;
-}
-
-#resume-button{
-    background: rgb(#9DC88D);
-    background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
-  width: 150px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  transition: 0.4s;
-  transform: rotate(0deg);
-  border: 2px solid black;
-  
-  
-    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-}
-
-#resume-button:hover{
-  background: black;
-  border: 1px solid white;
-  z-index: 10;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  transition: 0.4s;
-  transform: scale(1.15);
-  cursor: pointer;
-}
-
-#resume-text{
-  font-family: 'Questrial',
-  sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  font-style: italic;
-
-}
-
-#email-form-name{
-  width: 50%;
-  height: 50px;
-  border: 1px solid darkgray;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-left: 40rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: 'Questrial',
-  sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-style: italic;
-  transition: 0.4s;
-}
-
-#email-form-email{
-  width: 50%;
-  height: 50px;
-  border: 1px solid darkgray;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-left: 40rem;
-
-  padding-left: 1rem;
-  padding-right: 1rem;
-  ffont-family: 'Questrial',
-  sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-style: italic;
-  transition: 0.4s;
-}
-
-#email-form-subject{
-  width: 50%;
-  height: 50px;
-  border: 1px solid darkgray;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-left: 40rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: 'Questrial',
-  sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-style: italic;
-  transition: 0.4s;
-}
-
-#email-form-message{
-  width: 50%;
-  height: 220px;
-  border: 1px solid darkgray;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-left: 40rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: 'Questrial',
-  sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-style: italic;
-  transition: 0.4s;
-}
-
-#email-form-button{
-  width: 50%;
-  height: 50px;
-      background: rgb(#9DC88D);
-      background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
-  border: 1px solid darkgray;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-left: 40rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: 'Questrial',
-  sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  font-style: italic;
-  transition: 0.4s;
-}
-
-#email-text-muted{
-  margin-left: 40rem;
-}
-
-.form-label{
-  margin-left: 40rem;
-      text-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-}
-
-.form-control{
-      box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-}
-
-#copyright-footer{
+  #about-title {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-top: -8rem;
+    margin-right: 32.5rem;
+    text-align: start;
     color: #F1B24A;
     text-shadow: 3px 5px black
-}
+  }
+  
+  .projects-title {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-right: 36.5rem;
+    text-align: start;
+    color: #F1B24A;
+    text-shadow: 3px 5px black
+  }
+  
+  #resume-title {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-right: 36.5rem;
+    text-align: start;
+    color: #F1B24A;
+    text-shadow: 3px 5px black
+  }
+  
+  #contact-title {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-top: -1.5rem;
+    margin-right: 36.5rem;
+    text-align: start;
+    color: #F1B24A;
+    text-shadow: 3px 5px black
+  }
+  
+
+            
+            /* Battleship Specific Project */
+            
+            #battleship-info {
+              margin-right: 10rem;
+              margin-bottom: 20rem;
+              width: 100%;
+            }
+            
+            #battleship-csharp-logo {
+              margin-left: 1rem;
+            
+            }
+            
+            #battleship-info-title {
+              display: flex;
+              margin-top: -17rem;
+              font-style: normal;
+              background-color: lightgray;
+              border-radius: 10px;
+              box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+            }
+            
+            #battleship-info-summary {
+              position: relative;
+              top: 25px;
+              display: flex;
+              background-color: #efd09e;
+              z-index: 10;
+              border-radius: 10px;
+            }
+            
+            #github-battleship {
+              background-color: #ffffff;
+              border-radius: 15px;
+              position: relative;
+              display: flex;
+              top: 190px;
+              left: 57.3rem;
+            }
+            
+            #projectSVG>#battleship-info-summary {
+              display: flex;
+              background-color: #efd09e;
+              z-index: 10;
+            }
+                      /* Email Form Styling */
+                      #email-form-name {
+                        width: 50%;
+                        height: 50px;
+                        border: 1px solid darkgray;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        margin-left: 40rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: italic;
+                        transition: 0.4s;
+                      }
+                      
+                      #email-form-email {
+                        width: 50%;
+                        height: 50px;
+                        border: 1px solid darkgray;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        margin-left: 40rem;
+                      
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: italic;
+                        transition: 0.4s;
+                      }
+                      
+                      #email-form-subject {
+                        width: 50%;
+                        height: 50px;
+                        border: 1px solid darkgray;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        margin-left: 40rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: italic;
+                        transition: 0.4s;
+                      }
+                      
+                      #email-form-message {
+                        width: 50%;
+                        height: 220px;
+                        border: 1px solid darkgray;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        margin-left: 40rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: italic;
+                        transition: 0.4s;
+                      }
+                      
+                      #email-form-button {
+                        width: 50%;
+                        height: 50px;
+                        background: rgb(#9DC88D);
+                        background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
+                        border: 1px solid darkgray;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        margin-left: 40rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        font-style: italic;
+                        transition: 0.4s;
+                      }
+                      
+                      #email-text-muted {
+                        margin-left: 40rem;
+                      }
+                      
+                      .form-label {
+                        margin-left: 40rem;
+                        text-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                          rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+                      }
+                      
+                      .form-control {
+                        box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                          rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+                      }
+
+                      /* Footer Content */
+
+                      /* Contact Icon Menu Styling */
+                      footer {
+                      
+                        color: white;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 16px;
+                        min-height: 10vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                      }
+                      
+                      #contact-info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Questrial',
+                          sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-style: italic;
+                        margin-top: 50px;
+                      
+                      }
+                      
+                      #contact-icon-menu {
+                        position: fixed;
+                        bottom: 4.5rem;
+                        left: 10px;
+                        width: 5rem;
+                        height: 4rem;
+                        margin-right: 102rem;
+                      }
+                      
+                      #contact-icon-ul {
+                        list-style: none;
+                        width: 100%;
+                        left: 15px;
+                      }
+                      
+                      li {
+                        border: 1px solid black;
+                        display: inline-block;
+                        width: 3rem;
+                        height: 3rem;
+                        background: rgb(#9DC88D);
+                        background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
+                        border-radius: 10px;
+                        margin-right: 6rem;
+                        margin-left: -1rem;
+                        margin-top: 0rem;
+                        margin-bottom: 1rem;
+                        box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                          rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+                        transition: 0.4s;
+                      
+                      }
+                      
+                      li:hover {
+                        transform: scale(1.15);
+                        border: 1px solid;
+                      }
+                      
+                      #contact-icon-github {
+                        background: rgb(#9DC88D);
+                        background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
+                        z-index: 10;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 10px;
+                        transition: 0.4s;
+                        transform: rotate(0deg);
+                      }
+                      
+                      #contact-icon-github:hover {
+                        background: black;
+                        z-index: 10;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 10px;
+                        transition: 0.4s;
+                        transform: rotate(0deg);
+                      }
+                      
+                      
+                      #contact-icon-linkedin:hover {
+                        background: #0072b1;
+                        z-index: 10;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 10px;
+                        transition: 0.4s;
+                        transform: rotate(0deg);
+                        transform: scale(1.15);
+                        border: 1px solid;
+                      }
+
+                      #copyright-footer {
+                       color: #F1B24A;
+                       text-shadow: 3px 5px black
+      }
+    }
+    
+    @media only screen and (device-width: 768px) {
+      /* default iPad screens */
+    }
+
+
+
+
+
+
+
+
+
+
 
 
