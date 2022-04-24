@@ -71,9 +71,9 @@ function App() {
                 </div> */}
                 <div>
                   <BattleshipInfo />
-                  <div id="battleship-project">
-                    <BattleshipSVG />
-                  </div>
+                </div>
+                <div id="battleship-project">
+                  <BattleshipSVG />
                 </div>
 
                 {/* <div id="snake-project">

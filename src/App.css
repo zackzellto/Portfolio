@@ -1,5 +1,6 @@
 *{
   box-sizing: inherit;
+  
 }
 
 .hide-me{
@@ -22,11 +23,15 @@ font-family: 'Questrial',
 sans-serif;
   text-align: center;
   color: white;
-background: #093028;
+
+background: #F0F2F0;
 /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #237A57, #093028);
+background: -webkit-linear-gradient(to bottom, #000C40, #F0F2F0);
 /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #054c30, #012c24);
+background: linear-gradient(to bottom, #000C40, #F0F2F0);
+
+/* Chrome 10-25, Safari 5.1-6 */
+
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -227,13 +232,14 @@ background: #09302800;
   align-items: center;
   justify-content: center;
   margin-right: 2rem;
-  margin-left: 25px;
   border-radius: 15px;
   border: darkgray solid;
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
   cursor: pointer;
   display: flex;
+  position: relative;
+  right: 40px;
   transform: scale(1);
   width: 140%;
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
@@ -283,12 +289,47 @@ background: #09302800;
   transition: 0.4s;
 }
 
-/* Specific Projects */
+/* Battleship Specific Project */
 
-#battle{
-  margin-top: 2rem;
+#battleship-info {
   margin-right: 10rem;
+  margin-bottom: 20rem;
+  width: 100%;
+}
 
+#battleship-csharp-logo{
+  margin-left: 1rem;
+  
+}
+
+#battleship-info-title{
+  display: flex;
+  margin-top: -17rem;
+  font-style: normal;
+}
+
+#battleship-info-summary{
+  position: relative;
+  top: 25px;
+  display: flex;
+  background-color: #efd09e;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+#github-battleship{
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  top: 190px; 
+  left: 57.3rem;
+}
+
+#projectSVG > #battleship-info-summary{
+  display: flex;
+  background-color: #efd09e;
+  z-index: 10;
 }
 /* Contact Icon Menu Styling */
 footer{
@@ -539,3 +580,5 @@ li:hover{
     color: #F1B24A;
     text-shadow: 3px 5px black
 }
+
+

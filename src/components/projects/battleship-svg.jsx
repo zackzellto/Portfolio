@@ -8,7 +8,7 @@ const BattleshipLogo = require('../../media/battleship-logo.png');
   return (
     
   
-        <svg id='projectSVG' viewBox="0 0 1920 1080">
+        <svg name='battleship-svg' id='projectSVG' viewBox="0 0 1920 1080">
           <a id='projectLink' href='https://github.com/zackzellto/console-battleship-game/tree/master/battleship-game/Release/net5.0/Battleship%20Console%20Game' target="_blank" rel='noreferrer'>
             <foreignObject x="0" y="30" width="100%" height="100%">
               <Image id='projectGif' src={BattleshipGif} alt='battleshipgif' width='100%' height='1200px'></Image>
