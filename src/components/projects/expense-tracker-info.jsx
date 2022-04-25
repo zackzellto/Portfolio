@@ -1,6 +1,9 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import CSharpLogo from '../../media/icons/c-sharp-logo.png'
+import ReactIcon from '../../media/icons/react-icon.png'
+import HTMLIcon from '../../media/icons/html-icon.png'
+import CSSIcon from '../../media/icons/css-icon.png'
+import BootstrapIcon from '../../media/icons/bootstrap-icon.png'
 import GitHubIcon from '../../media/github-logo.png'
 
 
@@ -8,9 +11,9 @@ export default function ExpenseTrackerInfo() {
   return (
     <>
     
-        <h1 id='battleship-info-title'>Battleship</h1>
+        <h1 id='project-info-title'>Battleship</h1>
         <br />
-        <div id='battleship-info-summary'>
+        <div id='project-info-summary'>
             <p>
                 This console version of Battleship is a shortened version of the classic game.
                 <br />
@@ -19,15 +22,24 @@ export default function ExpenseTrackerInfo() {
             </p>
         </div>
         <br />
-        <div id='battleship-info-tech'>
-                <text>Built with: 
-                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"> 
-                        <Image id='battleship-csharp-logo' src={CSharpLogo} alt='c-sharp-logo' width='50px' height='50px' />
+        <div id='project-info-tech'>
+                <text id='project-built-with-text'>Built with: 
+                    <a href="https://reactjs.org/"> 
+                        <Image src={ReactIcon} alt='react-icon' width='40px' height='40px' />
+                    </a>
+                    <a href="https://www.w3schools.com/html/"> 
+                        <Image src={HTMLIcon} alt='html-icon' width='40px' height='40px' />
+                    </a>
+                    <a href="https://www.w3schools.com/css/"> 
+                        <Image src={CSSIcon} alt='css-icon' width='40px' height='40px' />
+                    </a>
+                    <a href="https://getbootstrap.com/"> 
+                        <Image src={BootstrapIcon} alt='bootstrap-icon' width='60px' height='60px' />
                     </a>
                 </text>
             </div>
         <br />
-        <div id='battleship-info-links'>
+        <div id='project-info-links'>
             <a href='https://github.com/zackzellto/console-battleship-game' target='_blank' rel='noopener noreferrer'>
                 <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>

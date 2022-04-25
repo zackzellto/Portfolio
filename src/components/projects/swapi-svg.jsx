@@ -16,8 +16,8 @@ const StarWarsLogo = require('../../media/starwarslogo.png');
         <image id='projectImage' x='18%' y='27%' width="1200" height="555" href={StarWarsLogo}></image>
           <defs>
             <linearGradient id="projectGradient">
-              <stop offset="0%" stopColor="rgb(150, 190, 126)" />
-              <stop offset="100%" stopColor="rgb(192, 195, 212)" />
+              <stop offset="0%" stopColor="#37A28E" />
+              <stop offset="100%" stopColor="#264653" />
             </linearGradient>
           </defs>
           </a>
