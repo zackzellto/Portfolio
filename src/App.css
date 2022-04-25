@@ -18,11 +18,8 @@ sans-serif;
   text-align: center;
   color: white;
 
-background: #F0F2F0;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #000C40, #F0F2F0);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #000C40, #F0F2F0);
+background: #264653;
+
 }
 
 h1,
@@ -32,74 +29,275 @@ h3 {
     sans-serif;
 }
 
-    /* default styles here for older browsers. 
-           I tend to go for a 600px - 960px width max but using percentages
-        */
-    @media only screen and (min-width: 960px) {
-      /* styles for browsers larger than 960px; */
-    }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* //Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //    */
+  }
     
-    @media only screen and (min-width: 1440px) {
-      /* styles for browsers larger than 1440px; */
-      
-      /* landing page text */
-    }
-    
-    @media only screen and (min-width: 2000px) {
-      /* for sumo sized (mac) screens */
-    }
-    
-    @media only screen and (max-device-width: 480px) {
+    @media only screen and (min-width: 200px) and (max-device-width: 425px) {
       /* styles for mobile browsers smaller than 480px; (iPhone) */
-
-            .App-header {
+    
+      
+      .App-header {
               font-family: 'Questrial',
                 sans-serif;
-              min-height: 50vh;
+              min-height: 100vh;
+              position: relative;
+              bottom: 70px;
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
             }
 
-            .word {
-              color: #ffffff;
-              font-size: 85px;
-              font-family: 'Questrial',
-                sans-serif;
-              margin-top: 9rem;
+            /* ============================================================================================================== */
+                                        /* Navbar links and styling */
+                                        
+                                        .navbar {
+                                          font-family: 'Questrial',
+                                            sans-serif;
+                                          min-height: 5vh;
+                                          border-bottom-left-radius: 1rem;
+                                          border-bottom-right-radius: 1rem;
+                                          display: flex;
+                                          flex-direction: column;
+                                          align-items: center;
+                                          justify-content: center;
+                                          font-size: 24px;
+                                          background: #09302800;
+                                        
+                                        }
+                                        
+                                        /* fallback for old browsers */
+                                        
+                                        
+                                        
+                                        .nav-links {
+                                          display: flex;
+                                          width: 478px;
+                                          font-family: 'Questrial',
+                                            sans-serif;
+                                          font-size: 22px;
+                                          color: #e5ba6b;
+                                          ;
+                                        }
+                                        
+                                        #nav-num {
+                                          display: flex;
+                                          color: #37A28E;
+                                          font-size: 20px;
+                                        }
+                                        
+                                        #offCanvasNavbar {
+                                          position: relative;
+                                          left: 25px;
+                                        }
+            
+            /* =========================================================================================================== */
+
+            #landing-text1{
+                position: relative;
+                top: -40px;
+                display: flex;
+                left: 25px;
+                color: rgb(211, 207, 202);
+                font-size: 38px;
+
+            }
+
+            #landing-text2 {
+              font-size: 48px;
+              color:#efd09e;
+              display: flex;
+              position: relative;
+              top: -40px;
+              left: 25px;
+            }    
+            
+            #landing-text3 {
+              font-size: 25px;
+              color: rgb(211, 207, 202);
+              display: flex;
+              position: relative;
+              top: -40px;
+              left: 25px;
             }
             
-            .animated-div1 {
-              z-index: 10;
-              background-color: #9DC88D;
+            #landing-text4 {
+              font-size: 18px;
+              color: rgb(211, 207, 202);
               display: flex;
-              height: 520px;
-              width: 200px;
-              margin-right: 50%;
-              margin-bottom: 5rem;
-              ;
-              border-radius: 25px;
-              box-shadow: rgb(0 0 0 / 59%) -25px -20px 25px 22px,
-                rgb(0 0 0 / 73%) 21px 55px 502px -20px;
+              position: relative;
+              top: -40px;
+              margin: auto;
+            }
+
+            /* ================================================================================================================== */
+              #about-title {
+                margin-top: 30px;
+                color:#efd09e;
+                font-size: 25px;
+                display: flex;
+                position: relative;
+                text-align: start;
+                
+              }
+
+            .about {
+              min-height: 100vh;
+              display: flex;
+              position: relative;
+              bottom: 1rem;
+              font-size: 18px;
+              color: rgb(211, 207, 202);
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+
+            #skills-background-div{
+              width: 300px;
+              height: 300px;
+              display: flex;
+              position: relative;
+              left: 30px;
+              margin-top: 30px;
+              border-radius: 10px;
+              background-color: #37A28E;
             }
             
             #skills-section {
-              color: black;
-              height: 100px;
-              background-color: #efd09e;
-              width: 100px;
+              box-shadow: 1px 5px  22px black, 1px 1px 1px black;
+              height: 275px;
+              background-color: black;
+              border-radius: 25px;
+              position: relative;
+              display: flex;
+              top: 12px;
+              left: 12px;
+              width: 275px;
+              margin-bottom: 40px;
             }
             
             #skills-title {
-              margin-bottom: 10px;
-              color: black;
-              height: 100px;
-              background-color: #efd09e;
-              width: 100px;
+              color: #E5BA6B;
+              font-weight: 600;
+              display: flex;
+              position: relative;
+              color: rgb(211, 207, 202);
+              top: -170px;
+              left: 25px;
+              margin: auto;
+    }
+            #tech-icon{
+              display: flex;
+              position: relative;
+              flex-direction: row;
+              flex-wrap: wrap;
+              top: -110px;
+              margin: auto;
+              width: 50px;
             }
 
+            #react-icon{
+              display: flex;
+              position: relative;
+              top: 30px;
+              left: -30px;
+              margin: auto;
+              width: 60px;
+            }
+
+            #css-icon{
+              display: flex;
+              position: relative;
+              top: 110px;
+              left: -40px;
+              margin: auto;
+              width: 60px;
+            }
+
+            #html-icon{
+              display: flex;
+              position: relative;
+              top: 110px;
+              left: -40px;
+              margin: auto;
+              width: 60px;
+            }
+
+            #js-icon{
+              display: flex;
+              position: relative;
+              top: 110px;
+              left: -40px;
+              margin: auto;
+              width: 60px;
+            }
+
+            #github-icon{
+              display: flex;
+              position: relative;
+              top: 130px;
+              right: 15rem;
+              margin: auto;
+              width: 60px;
+            }
+
+            #csharp-icon{
+              display: flex;
+              position: relative;
+              top: 19px;
+              left: -40px;
+              margin: auto;
+              width: 60px;
+            }
+
+            #postgresql-icon{
+              display: flex;
+              position: relative;
+              top: 110px;
+              right: 25rem;
+              margin: auto;
+              width: 120px;
+            }
             
+            #dotnet-icon{
+              display: flex;
+              position: relative;
+              top: 200px;
+              right: 12rem;
+              margin: auto;
+              width: 60px;
+            }
+
+            #bootstrap-icon{
+              display: flex;
+              position: relative;
+              top: 50px;
+              right: 14rem;
+              margin: auto;
+              width: 60px;
+            }
+
+            #visual-studio-icon{
+              display: flex;
+              position: relative;
+              top: 200px;
+              right: 33rem;
+              margin: auto;
+              width: 60px;
+            }
+
+            #vscode-icon{
+              display: flex;
+              position: relative;
+              top: 210px;
+              right: 19rem;
+              margin: auto;
+              width: 60px;
+            }
+
+            /* ======================================================================================================================= */
             
             #resume-button {
               background: rgb(#9DC88D);
@@ -144,42 +342,9 @@ h3 {
               margin-bottom: 40px;
             }
             
-            .above-footer-hr {
-              margin-top: 50px;
-            }
+
             
-            /* Navbar links and styling */
-            
-            .navbar {
-              font-family: 'Questrial',
-                sans-serif;
-              min-height: 5vh;
-              border-bottom-left-radius: 1rem;
-              border-bottom-right-radius: 1rem;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              font-size: 24px;
-              background: #09302800;
-              /* fallback for old browsers */
-            
-            }
-            
-            .nav-links {
-              display: flex;
-              width: 478px;
-              font-family: 'Questrial',
-                sans-serif;
-              font-size: 22px;
-              color: #e5ba6b;
-              ;
-            }
-            
-            #nav-num {
-              color: #F1B24A;
-              font-size: 20px;
-            }
+
             
             .portfolio {
               min-height: 60vh;
@@ -191,7 +356,6 @@ h3 {
               font-family: 'Nanum Gothic Coding',
                 monospace;
               font-weight: 700;
-            
               font-style: italic;
             }
             
@@ -213,13 +377,7 @@ h3 {
               margin-bottom: 40px;
             }
             
-            .about {
-              min-height: 50vh;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-            }
+            
             
             /* Project SVGs showcasing gifs on hover */
             #projectSVG {
@@ -284,22 +442,9 @@ h3 {
             }
 
 
-  .about {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    margin-right: 36rem;
-    text-align: start;
-  }
+ 
   
-  #about-title {
-    color: rgb(255, 255, 255);
-    font-size: 35px;
-    margin-top: -8rem;
-    margin-right: 32.5rem;
-    text-align: start;
-    color: #F1B24A;
-    text-shadow: 3px 5px black
-  }
+
   
   .projects-title {
     color: rgb(255, 255, 255);
@@ -482,7 +627,9 @@ h3 {
                       }
 
                       /* Footer Content */
-
+                      .above-footer-hr {
+                        margin-top: 50px;
+                      }
                       /* Contact Icon Menu Styling */
                       footer {
                       
@@ -513,8 +660,8 @@ h3 {
                       
                       #contact-icon-menu {
                         position: fixed;
-                        bottom: 4.5rem;
-                        left: 10px;
+                        bottom: 3.5rem;
+                        left: -10px;
                         width: 5rem;
                         height: 4rem;
                         margin-right: 102rem;
@@ -529,8 +676,8 @@ h3 {
                       li {
                         border: 1px solid black;
                         display: inline-block;
-                        width: 3rem;
-                        height: 3rem;
+                        width: 2rem;
+                        height: 2rem;
                         background: rgb(#9DC88D);
                         background: linear-gradient(173deg, rgb(150, 190, 126) 0%, rgb(192, 195, 212) 100%);
                         border-radius: 10px;

@@ -8,9 +8,23 @@ import ExpenseTrackerSVG from "./components/projects/expense-tracker-svg";
 import LandingText from "./components/landing-text/landing-text";
 import ContactIconMenu from "./components/contact/contact-icon-menu";
 import ResumeIcon from "./media/resume-icon.png";
+import JavaScriptIcon from "./media/icons/javascript-icon.png";
+import CSSIcon from "./media/icons/css-icon.png";
+import HTMLIcon from "./media/icons/html-icon.png";
+import ReactIcon from "./media/icons/react-icon.png";
+import DotNetIcon from "./media/icons/dotnet-icon.png";
+import PostgreSQLIcon from "./media/icons/postgresql-icon.png";
+import CSharpIcon from "./media/icons/c-sharp-logo.png";
+import BootstrapIcon from "./media/icons/bootstrap-icon.png";
+import VisualStudioCodeIcon from "./media/icons/visual-studio-code-icon.png";
+import VisualStudioIcon from "./media/icons/visual-studio-icon.png";
+import GitHubIcon from "./media/icons/github-icon.png";
 import ContactForm from "./components/contact/contact-form";
 import BattleshipInfo from "./components/projects/battleship-info";
-import { Button } from "react-bootstrap";
+import SWAPIInfo from "./components/projects/swapi-info";
+import SnakeGameInfo from "./components/projects/snakegame-info";
+import ExpenseTrackerInfo from "./components/projects/expense-tracker-info";
+import { Button, Image } from "react-bootstrap";
 
 function App() {
   return (
@@ -19,8 +33,22 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Container id="home-section">
-            <div className="animated-div1">
-              <LandingText />
+            <div className="header-div1">
+              <div>
+                <div id="landing-text1">Hi.</div>
+                <div id="landing-text3">My name is</div>
+
+                <div>
+                  <LandingText />
+                </div>
+                <div id="landing-text4">
+                  <p>
+                    I'm a Software Engineer who loves taking concepts & ideas,
+                    and turning them into a beautiful experience for people to
+                    use.
+                  </p>
+                </div>
+              </div>
             </div>
           </Container>
         </header>
@@ -28,7 +56,9 @@ function App() {
           <Container id="about-section">
             <hr />
             <div className="about">
-              <h2 id="about-title">0. About Me</h2>
+              <h2 id="about-title">
+                <span id="nav-num">0.</span> About Me
+              </h2>
               <br />
 
               <h5>
@@ -57,36 +87,83 @@ function App() {
                 </p>
               </h5>
             </div>
-            <div id="skills-section">
-              <h2 id="skills-title">Skills</h2>
+            <div id="skills-background-div">
+              <div id="skills-section">
+                <h2 id="skills-title">Skills</h2>
+                <div id="react-icon">
+                  <Image id="tech-icon" src={ReactIcon}></Image>
+                </div>
+                <div id="js-icon">
+                  <Image id="tech-icon" src={JavaScriptIcon}></Image>
+                </div>
+                <div id="html-icon">
+                  <Image id="tech-icon" src={HTMLIcon}></Image>
+                </div>
+                <div id="css-icon">
+                  <Image id="tech-icon" src={CSSIcon}></Image>
+                </div>
+                <div id="csharp-icon">
+                  <Image id="tech-icon" src={CSharpIcon}></Image>
+                </div>
+                <div id="dotnet-icon">
+                  <Image id="tech-icon" src={DotNetIcon}></Image>
+                </div>
+                <div id="bootstrap-icon">
+                  <Image id="tech-icon" src={BootstrapIcon}></Image>
+                </div>
+                <div id="postgresql-icon">
+                  <Image id="tech-icon" src={PostgreSQLIcon}></Image>
+                </div>
+                <div id="github-icon">
+                  <Image id="tech-icon" src={GitHubIcon}></Image>
+                </div>
+                <div id="vscode-icon">
+                  <Image id="tech-icon" src={VisualStudioCodeIcon}></Image>
+                </div>
+                <div id="visual-studio-icon">
+                  <Image id="tech-icon" src={VisualStudioIcon}></Image>
+                </div>
+              </div>
             </div>
             <hr />
           </Container>
           <Container id="projects-section">
-            <h1 className="projects-title">1. Projects</h1>
+            <h1 className="projects-title">
+              <span id="nav-num">1.</span> Projects
+            </h1>
             <div className="portfolio">
               <div className="portfolio-items">
-                {/* <div id="swapi-project">
+                <div id="swapi-project">
                   <StarWarsAPISVG />
-                </div> */}
+                </div>
                 <div>
-                  <BattleshipInfo />
+                  <SWAPIInfo />
                 </div>
                 <div id="battleship-project">
                   <BattleshipSVG />
                 </div>
-
-                {/* <div id="snake-project">
+                <div>
+                  <BattleshipInfo />
+                </div>
+                <div id="snake-project">
                   <SnakeGameSVG />
+                </div>
+                <div>
+                  <SnakeGameInfo />
                 </div>
                 <div id="expense-tracker-project">
                   <ExpenseTrackerSVG />
-                </div> */}
+                </div>
+                <div>
+                  <ExpenseTrackerInfo />
+                </div>
               </div>
             </div>
             <hr />
             <div id="resume-section">
-              <h1 id="resume-title">2. Resume</h1>
+              <h1 id="resume-title">
+                <span id="nav-num">2.</span> Resume
+              </h1>
               <div>
                 <p id="resume-text">Have an opportunity you can use me for? </p>
                 <p id="resume-text">Be sure to check out my resume!</p>
@@ -107,7 +184,9 @@ function App() {
         <footer>
           <Container id="contact-section">
             <div className="contact-info">
-              <h1 id="contact-title">3. Contact</h1>
+              <h1 id="contact-title">
+                <span id="nav-num">3.</span> Contact
+              </h1>
               <div>
                 <ContactForm />
               </div>

@@ -3,34 +3,18 @@ import TypeWriter from 'typewriter-effect'
 
 export default function LandingText() {
   return (
-    <div className='word'>
+
+    
+    <div id='landing-text2'>
         <TypeWriter
             onInit={(typewriter) => {
                 typewriter
                 .pauseFor(1500)
-                .typeString("Hi.")
-                .pauseFor(1500)
-                .typeString("<br />")
-                .typeString("I'm Zack.")
-                .pauseFor(1500)
-                .typeString("<br />")
-                .pauseFor(1500)
-                .typeString("a Software Engineer.")
-                // .pauseFor(2000)
-                // .deleteChars(18)
-                // .typeString("Dad.")
-                // .pauseFor(2000)
-                // .deleteChars(4)
-                // .typeString("Husband.")
-                // .pauseFor(2000)
-                // .deleteChars(8)
-                // .typeString("gamer.")
-                // .pauseFor(2000)
-                // .deleteChars(8)
-                // .typeString("a Software Engineer.")
+                .typeString("Zack Zellto")
                 .start();
             }}
         /> 
     </div>
+
   )
 }
