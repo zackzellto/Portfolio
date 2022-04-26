@@ -11,15 +11,15 @@ export default function SWAPIInfo() {
   return (
     <>
     
-        <h1 id='project-info-title'>Star Wars Search</h1>
+        <div id='project-info-title'>Star Wars Search</div>
         <br />
         <div id='project-info-summary'>
-            <p>
+            <div>
                 This app pulls data from the SWAPI api to display information about the characters and planets in the Star Wars universe.
                 <br />
                 You can search for a character by various parameters and see their information.
                 
-            </p>
+            </div>
         </div>
         <br />
         <div id='project-info-tech'>
@@ -41,7 +41,7 @@ export default function SWAPIInfo() {
         <br />
         <div id='project-info-links'>
             <a href='https://github.com/zackzellto/SWAPI' target='_blank' rel='noopener noreferrer'>
-                <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
+                <Image src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
             </div>
     </>

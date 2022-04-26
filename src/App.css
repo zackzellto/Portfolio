@@ -32,7 +32,7 @@ h3 {
     /* //Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //    */
   }
     
-    @media only screen and (min-width: 200px) and (max-device-width: 425px) {
+    @media only screen and (min-width: 200px) and (max-device-width: 480px) {
       /* styles for mobile browsers smaller than 480px; (iPhone) */
     
       
@@ -65,17 +65,6 @@ h3 {
                                         
                                         }
                                         
-                                        /* fallback for old browsers */
-                                        /* .nav-links {
-                                          display: flex;
-                                          width: 478px;
-                                          font-family: 'Questrial',
-                                            sans-serif;
-                                          font-size: 12px;
-                                          color: #e5ba6b;
-                                          ;
-                                        } */
-                                        
                                         #nav-num {
                                           display: flex;
                                           color: #37A28E;
@@ -100,12 +89,14 @@ h3 {
                 top: -40px;
                 display: flex;
                 left: 25px;
+                width: fit-content;
                 color: rgb(211, 207, 202);
                 font-size: 38px;
 
             }
 
             #landing-text2 {
+              width: fit-content;
               font-size: 48px;
               color:#efd09e;
               display: flex;
@@ -115,6 +106,7 @@ h3 {
             }    
             
             #landing-text3 {
+              width: fit-content;
               font-size: 25px;
               color: rgb(211, 207, 202);
               display: flex;
@@ -124,6 +116,7 @@ h3 {
             }
             
             #landing-text4 {
+              width: fit-content;
               font-size: 18px;
               color: rgb(211, 207, 202);
               display: flex;
@@ -154,148 +147,43 @@ h3 {
               justify-content: center;
             }
 
-            #skills-background-div{
-              width: 300px;
-              height: 300px;
-              display: flex;
-              position: relative;
-              left: 25px;
-              margin-top: 30px;
-              border-radius: 10px;
-              background-color: #37A28E;
-            }
+            
             
             #skills-section {
               box-shadow: 1px 5px  22px black, 1px 1px 1px black;
-              height: 275px;
+              min-width: 100%;
+              min-height: 100%;
               background-color: black;
               border-radius: 25px;
               position: relative;
               display: flex;
-              top: 12px;
-              left: 12px;
-              width: 275px;
-              margin-bottom: 40px;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              flex-wrap: wrap;
+              border: 2px solid #37A28E;
+              
             }
             
             #skills-title {
-              color: #E5BA6B;
-              font-weight: 600;
+              
               display: flex;
               position: relative;
-              color: rgb(211, 207, 202);
-              top: -170px;
-              left: 7rem;
+              color:#efd09e;
+              font-weight: 700;
+              font-size: 25px;
+              justify-content: center;
               margin: auto;
     }
             #tech-icon{
               display: flex;
               position: relative;
-              flex-direction: row;
-              flex-wrap: wrap;
-              top: -110px;
-              margin: auto;
-              width: 50px;
+              max-width: 60px;
+              padding: 5px;
+              margin-right: 30px;
             }
 
-            #react-icon{
-              display: flex;
-              position: relative;
-              top: 30px;
-              left: -30px;
-              margin: auto;
-              width: 60px;
-            }
 
-            #css-icon{
-              display: flex;
-              position: relative;
-              top: 110px;
-              left: -40px;
-              margin: auto;
-              width: 60px;
-            }
-
-            #html-icon{
-              display: flex;
-              position: relative;
-              top: 110px;
-              left: -40px;
-              margin: auto;
-              width: 60px;
-            }
-
-            #js-icon{
-              display: flex;
-              position: relative;
-              top: 110px;
-              left: -40px;
-              margin: auto;
-              width: 60px;
-            }
-
-            #github-icon{
-              display: flex;
-              position: relative;
-              top: 130px;
-              right: 15rem;
-              margin: auto;
-              width: 60px;
-            }
-
-            #csharp-icon{
-              display: flex;
-              position: relative;
-              top: 19px;
-              left: -40px;
-              margin: auto;
-              width: 60px;
-            }
-
-            #postgresql-icon{
-              display: flex;
-              position: relative;
-              top: 110px;
-              right: 25rem;
-              margin: auto;
-              width: 120px;
-            }
-            
-            #dotnet-icon{
-              display: flex;
-              position: relative;
-              top: 200px;
-              right: 12rem;
-              margin: auto;
-              width: 60px;
-            }
-
-            #bootstrap-icon{
-              display: flex;
-              position: relative;
-              top: 50px;
-              right: 14rem;
-              margin: auto;
-              width: 60px;
-            }
-
-            #visual-studio-icon{
-              display: flex;
-              position: relative;
-              top: 200px;
-              right: 33rem;
-              margin: auto;
-              width: 60px;
-            }
-
-            #vscode-icon{
-              display: flex;
-              position: relative;
-              top: 210px;
-              right: 19rem;
-              margin: auto;
-              width: 60px;
-            }
 
             /* ======================================================================================================================= */
             
@@ -397,51 +285,75 @@ h3 {
                                       transition: 0.4s;
                                     }
 
+                                    #project-info-container{
+                                      display: flex;
+                                      flex-direction: column;
+                                      align-items: center;
+                                      justify-content: center;
+                                      position: relative;
+                                      width: 100%;
+                                      height: 80%;
+                                      
+                                      border-radius: 15px;
+                                      padding: 10px;
+                                      
+                                    }
+
                                     #project-info-title{
                                       display: flex;
                                       justify-content: center;
                                       align-items: center;
-                                      height: 50px;
+                                      margin: auto;
+                                      min-height: 100%;
+                                      min-width: 100%;
                                       background-color: rgba(5, 5, 5, 0.66);
                                       margin-top: 30px;
                                       border-radius: 10px;
                                       font-weight: 700;
                                       font-size: 30px;
                                       color: #efd09e;
-                                      margin-bottom: 10px;
                                     }
 
                                     #project-info-summary{
                                       display: flex;
                                       justify-content: center;
                                       align-items: center;
-                                      height: 150px;
+                                      min-height: 100%;
                                       background-color: rgba(5, 5, 5, 0.66);
+                                      background-size: auto;
                                       border-radius: 10px;
                                       font-weight: 700;
                                       font-size: 15px;
                                       color: #efd09e;
+                                      padding: 10px;
                                       margin-bottom: 10px;
                                     }
 
                                     #project-info-tech{
-                                      font-size: 16px;
+                                      
                                       display: flex;
                                       position: relative;
-                                      bottom: 25px;
-                                      color: #efd09e;
-                                      margin-bottom: 10px;
+                                      justify-content: center;
+                                      flex-wrap: wrap;
+                                      align-items: center;
+                                      margin: auto;
+                                      min-width: auto;
+                                      bottom: 20px;
                                     }
 
                                     #project-info-links{
-                                      font-size: 16px;
                                       position: relative;
-                                      bottom: 110px;
-                                      left: 18rem;
+                                      justify-content: center;
+                                      align-items: center;
+                                      flex-wrap: wrap;
+                                      margin: auto;
                                     display: flex;
-                                      color: #efd09e;
-                                      margin-bottom: 10px;
+                                    min-width: 100%;
+                                    min-height: 100%;
+                                    bottom: 20px;
                                     }
+
+                                    
 
                         /* ============================================================================================ */
             #resume-button {
@@ -452,12 +364,10 @@ h3 {
               position: relative;
               justify-content: center;
               align-items: center;
-              left: 100px;
-              background-repeat: no-repeat;
+              margin: auto;
               background-position: center;
               border-radius: 10px;
               transition: 0.4s;
-              transform: rotate(0deg);
               border: 2px solid white;
               box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
                 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
@@ -505,6 +415,9 @@ h3 {
                         height: 50px;
                         border: 1px solid darkgray;
                         display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
                         border-radius: 10px;
                         transition: 0.4s;
                         margin-bottom: -30px;
@@ -516,7 +429,11 @@ h3 {
                         border: 1px solid darkgray;
                         border-radius: 10px;
                         display: flex;
+                         position: relative;
+                        justify-content: center;
+                        align-items: center;
                         transition: 0.4s;
+                        margin-top: 45px;
                       }
                       
                       #email-form-subject {
@@ -525,7 +442,11 @@ h3 {
                         border: 1px solid darkgray;
                         border-radius: 10px;
                         transition: 0.4s;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
                         display: flex;
+                        margin-top: 15px;
                       }
                       
                       #email-form-message {
@@ -533,8 +454,11 @@ h3 {
                         height: 220px;
                         border: 1px solid darkgray;
                         border-radius: 10px;
-
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
                         transition: 0.4s;
+                        margin-top: 15px;
                         display: flex;
                       }
                       
@@ -547,6 +471,7 @@ h3 {
                         border-radius: 10px;
                         justify-content: center;
                         align-items: center;
+                        position: relative;
                         font-size: 18px;
                         transition: 0.4s;
                         display: flex;

@@ -8,15 +8,15 @@ export default function BattleshipInfo() {
   return (
     <>
     
-        <h1 id='project-info-title'>Battleship</h1>
+        <div id='project-info-title'>Battleship</div>
         <br />
         <div id='project-info-summary'>
-            <p>
+            <div>
                 This console version of Battleship is a shortened version of the classic game.
                 <br />
                 The player gives coordinates to sink a randomized enemy ship.
                 
-            </p>
+            </div>
         </div>
         <br />
         <div id='project-info-tech'>

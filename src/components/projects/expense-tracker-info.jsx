@@ -11,10 +11,10 @@ export default function ExpenseTrackerInfo() {
   return (
     <>
     
-        <h1 id='project-info-title'>Expense Tracker</h1>
+        <div id='project-info-title'>Expense Tracker</div>
         <br />
         <div id='project-info-summary'>
-            <p>
+            <div>
                 This app allows you to track your expenses and keep track of your budget.
                 <br />
                 You can add and delete expenses.
@@ -22,7 +22,7 @@ export default function ExpenseTrackerInfo() {
                 This was the first project I built using React.
 
                 
-            </p>
+            </div>
         </div>
         <br />
         <div id='project-info-tech'>
@@ -44,7 +44,7 @@ export default function ExpenseTrackerInfo() {
         <br />
         <div id='project-info-links'>
             <a href='https://github.com/zackzellto/new-react-expense-tracker' target='_blank' rel='noopener noreferrer'>
-                <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
+                <Image src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
             </div>
     </>

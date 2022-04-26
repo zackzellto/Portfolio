@@ -10,10 +10,10 @@ export default function SnakeGameInfo() {
   return (
     <>
     
-        <h1 id='project-info-title'>Snake Game</h1>
+        <div id='project-info-title'>Snake Game</div>
         <br />
         <div id='project-info-summary'>
-            <p>
+            <div>
                 The classic game of Snake.
                 <br />
                 The player moves the snake around the board, eating apples.
@@ -22,7 +22,7 @@ export default function SnakeGameInfo() {
                 <br />
                 The player loses if the snake runs into itself or the wall.
                 
-            </p>
+            </div>
         </div>
         <br />
         <div id='project-info-tech'>
@@ -39,9 +39,9 @@ export default function SnakeGameInfo() {
                 </text>
             </div>
         <br />
-        <div id='project-info-links'>
+        <div id='project-info-links' >
             <a href='https://github.com/zackzellto/snake-game' target='_blank' rel='noopener noreferrer'>
-                <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
+                <Image src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
             </div>
     </>

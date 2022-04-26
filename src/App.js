@@ -89,8 +89,8 @@ function App() {
               </h5>
             </div>
             <div id="skills-background-div">
+              <div id="skills-title">Skills</div>
               <div id="skills-section">
-                <h2 id="skills-title">Skills</h2>
                 <div id="react-icon">
                   <Image id="tech-icon" src={ReactIcon}></Image>
                 </div>
@@ -137,25 +137,25 @@ function App() {
                 <div id="swapi-project">
                   <StarWarsAPISVG />
                 </div>
-                <div>
+                <div id="project-info-container">
                   <SWAPIInfo />
                 </div>
                 <div id="battleship-project">
                   <BattleshipSVG />
                 </div>
-                <div>
+                <div id="project-info-container">
                   <BattleshipInfo />
                 </div>
                 <div id="snake-project">
                   <SnakeGameSVG />
                 </div>
-                <div>
+                <div id="project-info-container">
                   <SnakeGameInfo />
                 </div>
                 <div id="expense-tracker-project">
                   <ExpenseTrackerSVG />
                 </div>
-                <div>
+                <div id="project-info-container">
                   <ExpenseTrackerInfo />
                 </div>
               </div>
