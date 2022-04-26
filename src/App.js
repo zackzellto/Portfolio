@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import ResponsiveNavbar from "./Navbar.jsx";
 import Container from "react-bootstrap/Container";
 import SnakeGameSVG from "./components/projects/snake-svg";

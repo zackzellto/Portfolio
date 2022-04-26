@@ -40,7 +40,7 @@ export default function SWAPIInfo() {
             </div>
         <br />
         <div id='project-info-links'>
-            <a href='https://github.com/zackzellto/console-battleship-game' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/zackzellto/SWAPI' target='_blank' rel='noopener noreferrer'>
                 <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
             </div>

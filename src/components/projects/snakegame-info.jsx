@@ -27,20 +27,20 @@ export default function SnakeGameInfo() {
         <br />
         <div id='project-info-tech'>
                 <text id='project-built-with-text'>Built with: 
-                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"> 
-                        <Image src={HTMLIcon} alt='c-sharp-logo' width='50px' height='50px' />
+                    <a href="https://www.w3schools.com/html/"> 
+                        <Image src={HTMLIcon} alt='html-icon' width='40px' height='40px' />
                     </a>
-                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"> 
-                        <Image  src={CSSIcon} alt='c-sharp-logo' width='50px' height='50px' />
+                    <a href="https://www.w3schools.com/css/"> 
+                        <Image src={CSSIcon} alt='css-icon' width='40px' height='40px' />
                     </a>
-                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"> 
+                    <a href="https://www.w3schools.com/js/"> 
                         <Image src={JSIcon} alt='c-sharp-logo' width='50px' height='50px' />
                     </a>
                 </text>
             </div>
         <br />
         <div id='project-info-links'>
-            <a href='https://github.com/zackzellto/console-battleship-game' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/zackzellto/snake-game' target='_blank' rel='noopener noreferrer'>
                 <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
             </div>

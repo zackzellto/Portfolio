@@ -11,13 +11,16 @@ export default function ExpenseTrackerInfo() {
   return (
     <>
     
-        <h1 id='project-info-title'>Battleship</h1>
+        <h1 id='project-info-title'>Expense Tracker</h1>
         <br />
         <div id='project-info-summary'>
             <p>
-                This console version of Battleship is a shortened version of the classic game.
+                This app allows you to track your expenses and keep track of your budget.
                 <br />
-                The player gives coordinates to sink a randomized enemy ship.
+                You can add and delete expenses.
+                <br />
+                This was the first project I built using React.
+
                 
             </p>
         </div>
@@ -40,7 +43,7 @@ export default function ExpenseTrackerInfo() {
             </div>
         <br />
         <div id='project-info-links'>
-            <a href='https://github.com/zackzellto/console-battleship-game' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/zackzellto/new-react-expense-tracker' target='_blank' rel='noopener noreferrer'>
                 <Image id='github-battleship' src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
             </div>
