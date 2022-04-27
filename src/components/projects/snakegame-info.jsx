@@ -9,7 +9,7 @@ import GitHubIcon from '../../media/github-logo.png'
 export default function SnakeGameInfo() {
   return (
     <>
-    
+        <div className='snake-info'>
         <div id='project-info-title'>Snake Game</div>
         <br />
         <div id='project-info-summary'>
@@ -43,7 +43,7 @@ export default function SnakeGameInfo() {
             <a href='https://github.com/zackzellto/snake-game' target='_blank' rel='noopener noreferrer'>
                 <Image src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
-            </div>
+            </div></div>
     </>
   )
 }

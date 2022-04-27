@@ -10,7 +10,7 @@ import GitHubIcon from '../../media/github-logo.png'
 export default function ExpenseTrackerInfo() {
   return (
     <>
-    
+        <div className='expense-tracker-info'>
         <div id='project-info-title'>Expense Tracker</div>
         <br />
         <div id='project-info-summary'>
@@ -46,7 +46,7 @@ export default function ExpenseTrackerInfo() {
             <a href='https://github.com/zackzellto/new-react-expense-tracker' target='_blank' rel='noopener noreferrer'>
                 <Image src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
-            </div>
+            </div></div>
     </>
   )
 }

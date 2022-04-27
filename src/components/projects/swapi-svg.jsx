@@ -7,7 +7,7 @@ const StarWarsLogo = require('../../media/starwarslogo.png');
 
   return (
         
-        <svg id='projectSVG' viewBox="0 0 1920 1080">
+        <svg className='swapi-svg' id='projectSVG' viewBox="0 0 1920 1080">
           <a id='projectLink' href='https://zack-react-swapi-app.herokuapp.com/' target="_blank" rel='noreferrer'>
             <foreignObject x="0" y="0" width="100%" height="100%">
               <Image id='projectGif' src={SWAPIStaticSite} alt='SWAPISite' width='100%' height='1200px'></Image>

@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ResponsiveNavbar() {
   return (
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+<Navbar id='portfolio-navbar' collapseOnSelect fixed='top' expand="lg" bg="dark" variant="dark">
   <Container>
   <Navbar.Brand href="#home-section"><Image id='zack-logo' src={MyLogo}></Image></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -7,8 +7,8 @@ import GitHubIcon from '../../media/github-logo.png'
 export default function BattleshipInfo() {
   return (
     <>
-    
-        <div id='project-info-title'>Battleship</div>
+    <div className='battleship-info'>
+        <div  id='project-info-title'>Battleship</div>
         <br />
         <div id='project-info-summary'>
             <div>
@@ -31,7 +31,7 @@ export default function BattleshipInfo() {
             <a href='https://github.com/zackzellto/console-battleship-game' target='_blank' rel='noopener noreferrer'>
                 <Image src={GitHubIcon} alt='github-logo' width='50px' height='50px' />
             </a>
-            </div>
+            </div></div>
     </>
   )
 }

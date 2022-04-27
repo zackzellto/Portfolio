@@ -54,15 +54,15 @@ function App() {
           </Container>
         </header>
         <main>
+          <hr />
           <Container id="about-section">
-            <hr />
             <div className="about">
-              <h2 id="about-title">
+              <div id="about-title">
                 <span id="nav-num">0.</span> About Me
-              </h2>
+              </div>
               <br />
 
-              <h5>
+              <div>
                 <p>
                   I have been in the tech industry for over 11 years working in
                   IT. It has been a very interesting career which has allowed me
@@ -86,8 +86,9 @@ function App() {
                   excited to bring my passion and skills to the professional
                   world.
                 </p>
-              </h5>
+              </div>
             </div>
+            <hr />
             <div id="skills-background-div">
               <div id="skills-title">Skills</div>
               <div id="skills-section">
@@ -129,29 +130,33 @@ function App() {
             <hr />
           </Container>
           <Container id="projects-section">
-            <h1 className="projects-title">
+            <div className="projects-title">
               <span id="nav-num">1.</span> Projects
-            </h1>
+            </div>
             <div className="portfolio">
               <div className="portfolio-items">
+                <div id="swapi-project-bg"></div>
                 <div id="swapi-project">
                   <StarWarsAPISVG />
                 </div>
                 <div id="project-info-container">
                   <SWAPIInfo />
                 </div>
+                <div id="battleship-project-bg"></div>
                 <div id="battleship-project">
                   <BattleshipSVG />
                 </div>
                 <div id="project-info-container">
                   <BattleshipInfo />
                 </div>
+                <div id="snake-project-bg"></div>
                 <div id="snake-project">
                   <SnakeGameSVG />
                 </div>
                 <div id="project-info-container">
                   <SnakeGameInfo />
                 </div>
+                <div id="expense-tracker-project-bg"></div>
                 <div id="expense-tracker-project">
                   <ExpenseTrackerSVG />
                 </div>

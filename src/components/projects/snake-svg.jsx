@@ -7,7 +7,7 @@ const SnakeLogo = require('../../media/snake-thumbnail.png');
 
   return (
  
-        <svg id='projectSVG' viewBox="0 0 1920 1080">
+        <svg className='snake-svg' id='projectSVG' viewBox="0 0 1920 1080">
           <a id='projectLink' href='https://zackzellto.github.io/snake-game/' target="_blank" rel='noreferrer'>
             <foreignObject x="0" y="0" width="100%" height="100%">
               <Image id='projectGif' src={SnakeGameGif} alt='snakegif'></Image>
