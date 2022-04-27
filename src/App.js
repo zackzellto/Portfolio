@@ -25,6 +25,7 @@ import BattleshipInfo from "./components/projects/battleship-info";
 import SWAPIInfo from "./components/projects/swapi-info";
 import SnakeGameInfo from "./components/projects/snakegame-info";
 import ExpenseTrackerInfo from "./components/projects/expense-tracker-info";
+import WorkTogether from "./media/lets-work-together.png";
 import { Button, Image } from "react-bootstrap";
 
 function App() {
@@ -49,6 +50,12 @@ function App() {
                     use.
                   </p>
                 </div>
+                <div id="landing-cta-bg"></div>
+                <div id="landing-cta">
+                  <a href="#contact-section">
+                    <Image id="landing-cta-image" src={WorkTogether}></Image>
+                  </a>
+                </div>
               </div>
             </div>
           </Container>
@@ -64,27 +71,8 @@ function App() {
 
               <div>
                 <p>
-                  I have been in the tech industry for over 11 years working in
-                  IT. It has been a very interesting career which has allowed me
-                  to accomplish many of my personal goals. I have a passion for
-                  learning new things and I am always looking to expand my
-                  knowledge.
-                </p>
-                <p>
+                  I'm a Software Engineer with a passion for solving problems
                   <br />
-                  From working at a startup to working at a large corporation, I
-                  have had the opportunity to work with a wide array of people
-                  in a diverse range of roles. I believe a true team environment
-                  is where everyone is included in the life cycle of a project.
-                  <br />
-                </p>
-                <p>
-                  <br />
-                  In late 2021 I chose to teach myself how to code and after
-                  many hours of work learning and building projects and
-                  understanding what it takes to be a software engineer. I am
-                  excited to bring my passion and skills to the professional
-                  world.
                 </p>
               </div>
             </div>
@@ -177,7 +165,7 @@ function App() {
               <Button
                 id="resume-button"
                 type="button"
-                href="https://drive.google.com/file/d/1whj-0qPem-W9Qik1SVKQk0ywHOPS6gz3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Cf3VlM7MHSDsA6ecskYsTHbTrk_Ctot7/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,28 +1,78 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import { Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function ContactForm() {
+    const [toSend, setToSend] = useState({
+    from_name: '',
+    subject: '',
+    message: '',
+    reply_to: '',
+  });
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    emailjs.send(
+      'my_gmail_account',
+      'template_q65yjwr',
+      toSend,
+      'GAWF3OFJcs0beqvWj'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+  };
+
+
   return (
     <>
-    <Form>
-        <Form.Group controlId="formBasicEmail">
-            
-            <Form.Control id='email-form-name' type="text" placeholder="Enter name" />
-            
-            <Form.Control id='email-form-email' type="email" placeholder="Enter email" />
-            
-            <Form.Control id='email-form-subject' type="text" placeholder="Enter subject" />
-            
-            <Form.Control id='email-form-message' as="textarea" placeholder='Enter message' rows="10" />
-            <div>
-            <Button id='email-form-button'>Send me an email!</Button></div>
-            <Form.Text id='email-text-muted' className="text-muted">
-                I'll never share your email with anyone else.
-            </Form.Text>
-            
-        </Form.Group>
-    </Form>
+<form onSubmit={onSubmit}>
+  <input
+    id='email-form-name'
+    type='text'
+    name='from_name'
+    placeholder='Your name'
+    value={toSend.from_name}
+    onChange={handleChange}
+  />  
+  <input
+    id='email-form-email'
+    type='text'
+    name='reply_to'
+    placeholder='Your email'
+    value={toSend.reply_to}
+    onChange={handleChange}
+  />
+  <input
+    id='email-form-subject'
+    type='text'
+    name='subject'
+    placeholder='Subject'
+    value={toSend.subject}
+    onChange={handleChange}
+  />
+  <input
+    id='email-form-message'
+    type='text'
+    name='message'
+    placeholder='Your message'
+    value={toSend.message}
+    onChange={handleChange}
+  />
+
+  <Button id='email-form-button' type='submit'>Send me an email!</Button>
+    <Form.Text id='email-text-muted' className="text-muted">
+          I'll never share your email with anyone else.
+      </Form.Text>
+</form>
     </>
   );
 }
