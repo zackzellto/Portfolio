@@ -279,7 +279,7 @@ h3 {
       margin-bottom: -330px;
   
     }
-
+          
             .swapi-info {
               display: flex;
               flex-direction: column;
@@ -315,23 +315,23 @@ h3 {
             }
             
             .battleship-svg {
-              cursor: pointer;
-              align-items: center;
-              justify-content: center;
-              border-radius: 15px;
-              border: darkgray solid;
-              box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-                rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-              cursor: pointer;
-              display: flex;
-              position: relative;
-              transform: scale(1);
-              margin: auto;
-              right: 300px;
-              min-width: 100%;
-              width: 500px;
-              margin-top: -100px;
-              transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            border-radius: 15px;
+            border: darkgray solid;
+            box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+            rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            transform: scale(1);
+            max-width: 100%;
+            margin: auto;
+            right: 300px;
+            width: 550px;
+            bottom: 150px;
+            transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
             }
 
         .battleship-info {
@@ -346,7 +346,7 @@ h3 {
           left: 170px;
           z-index: 10;
           margin: auto;
-          bottom: 340px;
+          bottom: 400px;
         
         }
         
@@ -367,22 +367,23 @@ h3 {
         }
         
         .swapi-svg {
-          cursor: pointer;
-          align-items: center;
-          justify-content: center;
-          border-radius: 15px;
-          border: darkgray solid;
-          box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            border-radius: 15px;
+            border: darkgray solid;
+            box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
             rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-          cursor: pointer;
-          display: flex;
-          position: relative;
-          transform: scale(1);
-          margin: auto;
-          left: 300px;
-          min-width: 100%;
-          width: 500px;
-          transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            transform: scale(1);
+            max-width: 100%;
+            margin: auto;
+            left: 300px;
+            width: 550px;
+            bottom: 50px;
+            transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
         }
 
     .snake-info {
@@ -397,7 +398,8 @@ h3 {
       right: 170px;
       z-index: 10;
       margin: auto;
-      bottom: 440px;
+      bottom: 400px;
+    
     
     }
     
@@ -434,7 +436,7 @@ h3 {
       left: 300px;
       min-width: 100%;
       width: 500px;
-      bottom: 80px;
+      bottom: 150px;
       transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
     }
 
@@ -450,7 +452,7 @@ h3 {
                         left: 170px;
                         z-index: 10;
                         margin: auto;
-                        bottom: 1100px;
+                        bottom: 1070px;
                         
     }
 
@@ -473,9 +475,9 @@ h3 {
     }
 
     .expense-tracker-svg{
-      cursor: pointer;
             align-items: center;
             justify-content: center;
+            margin-right: 2rem;
             border-radius: 15px;
             border: darkgray solid;
             box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
@@ -484,11 +486,11 @@ h3 {
             display: flex;
             position: relative;
             transform: scale(1);
+            max-width: 100%;
             margin: auto;
             right: 300px;
-            min-width: 100%;
-            width: 500px;
-            top: -750px;
+            width: 550px;
+            top: -800px;
             transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
     }
     /* Project SVGs showcasing gifs on hover */
@@ -603,7 +605,6 @@ h3 {
       padding: 15px;
       background-color: rgba(0, 0, 0, 0.395);
       border-radius: 10px;
-      left: 25px;
       bottom: 20px;
             box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
             rgb(0 0 0 / 73%) 0px 16px 10px -10px;

@@ -22,7 +22,7 @@ export default function SWAPIInfo() {
             </div>
         </div>
         <br />
-        <div id='project-info-tech'>
+        <div className='project-info-tech-swapi' id='project-info-tech'>
                 <text id='project-built-with-text'>Built with: 
                     <a href="https://reactjs.org/"> 
                         <Image src={ReactIcon} alt='react-icon' width='40px' height='40px' />

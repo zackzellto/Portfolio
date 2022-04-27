@@ -2,8 +2,11 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
+
     const [toSend, setToSend] = useState({
     from_name: '',
     subject: '',
@@ -23,12 +26,19 @@ export default function ContactForm() {
       toSend,
       'GAWF3OFJcs0beqvWj'
     )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
-      });
+         .then(res => {
+        if (res.status === 200){
+          toast.success("Message sent successfully!");  
+          console.log('SUCCESS!', res.status, res.text);   
+          } else {
+          toast.error("Message failed to send!");
+          console.log('FAILED...', res.status, res.text);
+          }});
+
+      document.getElementById('email-form-name').value = '';
+      document.getElementById('email-form-email').value = '';
+      document.getElementById('email-form-subject').value = '';
+      document.getElementById('email-form-message').value = '';
   };
 
 
@@ -69,6 +79,17 @@ export default function ContactForm() {
   />
 
   <Button id='email-form-button' type='submit'>Send me an email!</Button>
+  <ToastContainer
+  position="bottom-right"
+  autoClose={4000}
+  hideProgressBar={true}
+  newestOnTop={false}
+  closeOnClick
+  rtl={false}
+  pauseOnFocusLoss
+  draggable
+  pauseOnHover />
+
     <Form.Text id='email-text-muted' className="text-muted">
           I'll never share your email with anyone else.
       </Form.Text>
