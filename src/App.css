@@ -3444,14 +3444,11 @@ padding: 10px;
 
 #my-headshot {
 width: 50%;
-height: fit-content;
-max-height: 50%;
 top: 40px;
 position: relative;
-border-radius: 20px;
+border-radius: 15px;
 display: flex;
-margin: auto;
-padding: 10px;
+left: 25%;
 box-shadow: 1px 5px 22px #37A28E;
 }
 
