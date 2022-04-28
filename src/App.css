@@ -225,7 +225,7 @@ sans-serif;
     display: flex;
     margin: auto;
     padding: 10px;
-    transform: rotate(321deg);
+    box-shadow: 1px 5px 22px #37A28E;
   }
 
   #skills-section-card-title {
@@ -1139,7 +1139,7 @@ background-color: white;
   display: flex;
   margin: auto;
   padding: 10px;
-  transform: rotate(321deg);
+  box-shadow: 1px 5px 22px #37A28E;
 }
 
 #skills-section-card-title {
@@ -2045,7 +2045,7 @@ background-color: white;
   display: flex;
   margin: auto;
   padding: 10px;
-  transform: rotate(321deg);
+  box-shadow: 1px 5px 22px #37A28E;
 }
 
 /* #skills-container{
@@ -2748,7 +2748,7 @@ color: #efd09e;
     display: flex;
     margin: auto;
     padding: 10px;
-    transform: rotate(321deg);
+    box-shadow: 1px 5px 22px #37A28E;
   }
 
   /* #skills-container{
@@ -3421,7 +3421,8 @@ border-radius: 15px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-
+box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 margin: auto;
 height: fit-content;
 max-height: 100%;
@@ -3442,8 +3443,7 @@ padding: 10px;
 }
 
 #my-headshot {
-width: fit-content;
-max-width: 50%;
+width: 50%;
 height: fit-content;
 max-height: 50%;
 top: 40px;
@@ -3452,7 +3452,7 @@ border-radius: 20px;
 display: flex;
 margin: auto;
 padding: 10px;
-transform: rotate(321deg);
+box-shadow: 1px 5px 22px #37A28E;
 }
 
 
