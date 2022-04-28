@@ -17,8 +17,7 @@ import DotNetIcon from "./media/icons/dotnet-icon.png";
 import PostgreSQLIcon from "./media/icons/postgresql-icon.png";
 import CSharpIcon from "./media/icons/c-sharp-logo.png";
 import BootstrapIcon from "./media/icons/bootstrap-icon.png";
-import VisualStudioCodeIcon from "./media/icons/visual-studio-code-icon.png";
-import VisualStudioIcon from "./media/icons/visual-studio-icon.png";
+import GitIcon from "./media/icons/git-logo.png";
 import GitHubIcon from "./media/icons/github-icon.png";
 import ContactForm from "./components/contact/contact-form";
 import BattleshipInfo from "./components/projects/battleship-info";
@@ -26,6 +25,7 @@ import SWAPIInfo from "./components/projects/swapi-info";
 import SnakeGameInfo from "./components/projects/snakegame-info";
 import ExpenseTrackerInfo from "./components/projects/expense-tracker-info";
 import WorkTogether from "./media/lets-work-together.png";
+import MyHeadshot from "./media/zack-headshot.png";
 import { Button, Image } from "react-bootstrap";
 
 function App() {
@@ -61,60 +61,116 @@ function App() {
           </Container>
         </header>
         <main>
-          <hr />
           <Container id="about-section">
+            <div id="about-bg"></div>
             <div className="about">
-              <div id="about-title">
-                <span id="nav-num">0.</span> About Me
-              </div>
-              <br />
+              <Container id="about-me-container">
+                <Image id="my-headshot" src={MyHeadshot}></Image>
 
-              <div>
-                <p>
-                  I'm a Software Engineer with a passion for solving problems
-                  <br />
-                </p>
-              </div>
+                <div id="about-title">
+                  <span id="nav-num">0.</span> About Me
+                </div>
+                <div id="about-me-info">
+                  <p>
+                    As a self taught Software Engineer, I've always had a
+                    passion for learning. I started my coding journey during my
+                    career in IT. I knew that I always had a passion for
+                    designing and building incredible solutions for people to
+                    use. In Summer '21, I decided to break away from the IT
+                    world and pursue a career in Software Engineering. It's paid
+                    off dividends in the learning experience alone. Fast-forward
+                    to today, I'm a full-stack Software Engineer with a strong
+                    desire to bring my skills to the professional world, and I
+                    can't wait to see what happens next!
+                  </p>
+                </div>
+              </Container>
             </div>
             <hr />
-            <div id="skills-background-div">
+            <Container id="skills-container">
               <div id="skills-title">Skills</div>
-              <div id="skills-section">
-                <div id="react-icon">
-                  <Image id="tech-icon" src={ReactIcon}></Image>
+
+              <div id="skills-section-card">
+                <div id="skills-section-card-title">
+                  <u id="skills-title-underline">Frontend Frameworks</u>
                 </div>
-                <div id="js-icon">
-                  <Image id="tech-icon" src={JavaScriptIcon}></Image>
+                <div id="skills-section-card-description">
+                  React is the primary front-end framework that I use when
+                  building my applications, the hooks and components truly make
+                  developing applications so much more intuitive.
                 </div>
-                <div id="html-icon">
-                  <Image id="tech-icon" src={HTMLIcon}></Image>
-                </div>
-                <div id="css-icon">
-                  <Image id="tech-icon" src={CSSIcon}></Image>
-                </div>
-                <div id="csharp-icon">
-                  <Image id="tech-icon" src={CSharpIcon}></Image>
-                </div>
-                <div id="dotnet-icon">
-                  <Image id="tech-icon" src={DotNetIcon}></Image>
-                </div>
-                <div id="bootstrap-icon">
-                  <Image id="tech-icon" src={BootstrapIcon}></Image>
-                </div>
-                <div id="postgresql-icon">
-                  <Image id="tech-icon" src={PostgreSQLIcon}></Image>
-                </div>
-                <div id="github-icon">
-                  <Image id="tech-icon" src={GitHubIcon}></Image>
-                </div>
-                <div id="vscode-icon">
-                  <Image id="tech-icon" src={VisualStudioCodeIcon}></Image>
-                </div>
-                <div id="visual-studio-icon">
-                  <Image id="tech-icon" src={VisualStudioIcon}></Image>
-                </div>
+
+                <Image id="tech-icon" src={ReactIcon}></Image>
               </div>
-            </div>
+              <div id="skills-section-card">
+                <div id="skills-section-card-title">
+                  <u id="skills-title-underline">Frontend Languages</u>
+                </div>
+                <div id="skills-section-card-description">
+                  HTML, CSS & JavaScript are the foundation of all web
+                  development languages that I have used in every project I've
+                  done.
+                </div>
+
+                <Image id="tech-icon" src={HTMLIcon}></Image>
+
+                <Image id="tech-icon" src={CSSIcon}></Image>
+
+                <Image id="tech-icon" src={JavaScriptIcon}></Image>
+              </div>
+
+              <div id="skills-section-card">
+                <div id="skills-section-card-title">
+                  <u id="skills-title-underline">Backend Technologies</u>
+                </div>
+                <div id="skills-section-card-description">
+                  When building a backend to a full-stack application, I use
+                  ASP.NET Core and C#.
+                </div>
+
+                <Image id="tech-icon" src={DotNetIcon}></Image>
+
+                <Image id="tech-icon" src={CSharpIcon}></Image>
+              </div>
+              <div id="skills-section-card">
+                <div id="skills-section-card-title">
+                  <u id="skills-title-underline">Design Frameworks</u>
+                </div>
+                <div id="skills-section-card-description">
+                  Bootstrap is the framework that I use for many projects when
+                  it comes to design.
+                </div>
+
+                <Image id="tech-icon" src={BootstrapIcon}></Image>
+              </div>
+              <div id="skills-section-card">
+                <div id="skills-section-card-title">
+                  <u id="skills-title-underline">Databases</u>
+                </div>
+
+                <div id="skills-section-card-description">
+                  PostgreSQL is the database that I have used in my learning
+                  journey, and I am very comfortable with it.
+                </div>
+
+                <Image id="tech-icon" src={PostgreSQLIcon}></Image>
+              </div>
+              <div id="skills-section-card">
+                <div id="skills-section-card-title">
+                  <u id="skills-title-underline">Version Control</u>
+                </div>
+
+                <div id="skills-section-card-description">
+                  Git and GitHub are the two main tools I use to manage version
+                  control.
+                </div>
+
+                <Image id="tech-icon" src={GitIcon}></Image>
+
+                <Image id="tech-icon" src={GitHubIcon}></Image>
+              </div>
+            </Container>
+
             <hr />
           </Container>
           <Container id="projects-section">
@@ -153,11 +209,13 @@ function App() {
                 </div>
               </div>
             </div>
-            <hr />
+
             <div id="resume-section">
-              <h1 id="resume-title">
+              <div id="above-resume"></div>
+              <div id="resume-title">
                 <span id="nav-num">2.</span> Resume
-              </h1>
+              </div>
+
               <div>
                 <p id="resume-text">Have an opportunity you can use me for? </p>
                 <p id="resume-text">Be sure to check out my resume!</p>
